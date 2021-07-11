@@ -1,0 +1,1 @@
+Used to demonstrate a proof of concept for a floor mat with an array of pressure sensors arranged in a grid-like fashion.  The mat would span the corridor within a workplace and would track people as they go in either direction, therefor giving an account of how many people are on either side of the mat.  

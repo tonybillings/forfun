@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoopsVR.CSharp.Plugins", "HoopsVR.CSharp.Plugins.csproj", "{61564F8F-03F7-809A-A3CA-EC0A41A1E4E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoopsVR.CSharp", "HoopsVR.CSharp.csproj", "{89C6F3E9-B0D2-6779-C962-377B9AD24AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoopsVR.CSharp.Editor", "HoopsVR.CSharp.Editor.csproj", "{C0AFE593-232F-B1C5-B9DC-7DBC208F66F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61564F8F-03F7-809A-A3CA-EC0A41A1E4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61564F8F-03F7-809A-A3CA-EC0A41A1E4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61564F8F-03F7-809A-A3CA-EC0A41A1E4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61564F8F-03F7-809A-A3CA-EC0A41A1E4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C6F3E9-B0D2-6779-C962-377B9AD24AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C6F3E9-B0D2-6779-C962-377B9AD24AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C6F3E9-B0D2-6779-C962-377B9AD24AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C6F3E9-B0D2-6779-C962-377B9AD24AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0AFE593-232F-B1C5-B9DC-7DBC208F66F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0AFE593-232F-B1C5-B9DC-7DBC208F66F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0AFE593-232F-B1C5-B9DC-7DBC208F66F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0AFE593-232F-B1C5-B9DC-7DBC208F66F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

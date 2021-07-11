@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>xT50 :: Label Statements</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">xT50 :: Label Statements</span>
+
+        <div id="content-container">
+            <span>
+                The first register in L1 cache, R0, holds the instruction pointer for the program ROM.  The instruction pointer determines which instruction
+                is executed next, therefore by manipulating this value it is possible to implement if/then statments, loops, function calls, etc, in the program.  Although
+                this can be done by keeping track of the instruction index manually and setting R0 accordingly, it is far easier to rely on labels and the 'goto' keyword.
+            </span>
+            <br />
+            <br />
+            <span>
+                A label statement is defined by a word followed by a colon, with no spaces in between.  The word may contain letters, numbers and underscores,
+                in any combination.  Labels are case-sensitive.  The following label statements are all valid:
+            </span>
+            <br />
+            <br />
+            <div class="code">
+                begin: <br />
+                delay_loop: <br />
+                func_1: <br />
+                1: <br />
+                _:
+            </div>
+            <br />
+            <span>
+                A label essentially references the instruction that follows it, making it possible to set the instruction pointer by setting R0 to the label:
+            </span>
+            <br />
+            <br />
+            <div class="code">
+                loop:
+                <div class="code indented-code">
+                    ADD R3 R3 1 <br />
+                    BEQ R3 255 <br />
+                    SET R0 loop
+                </div>
+            </div>
+            <br />
+            <span>
+                The example above increments R3 until it equals 255, at which time it will exit the loop.  However, the third instruction statement can be rewritten
+                using the 'goto' keyword to more clearly state the intended action:
+            </span>
+            <br />
+            <br />
+            <div class="code">
+                loop:
+                <div class="code indented-code">
+                    ADD R3 R3 1 <br />
+                    BEQ R3 255 <br />
+                    goto loop
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

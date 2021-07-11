@@ -1,0 +1,7 @@
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\KSPGuage\KSPGuage\bin\Release\KSPGuage.dll
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\KSPGuage\KSPGuage\bin\Release\KSPGuage.pdb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\KSPGuage\KSPGuage\bin\Release\Assembly-CSharp.dll
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\KSPGuage\KSPGuage\bin\Release\UnityEngine.dll
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\KSPGuage\KSPGuage\obj\Release\KSPGuage.dll
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\KSPGuage\KSPGuage\obj\Release\KSPGuage.pdb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\KSPGuage\KSPGuage\bin\Release\KSPGuage.cfg

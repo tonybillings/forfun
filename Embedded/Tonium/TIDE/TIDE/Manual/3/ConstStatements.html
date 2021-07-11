@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>xT50 :: Const Statements</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">xT50 :: Const Statements</span>
+
+        <div id="content-container">
+            <span>
+                The xT50 assembly language supports the use of named constant numbers and named registers.  A const statement consists
+                of the 'const' keyword, the name of the constant, an assignment operator, and the const value, each separated by one or more spaces.  
+                The name may contain letters, numbers and underscores, in any combination. The const keyword is not case-sensitive but the 
+                name and value are.
+            </span>
+            <br />
+            <br />
+            <span>The following examples of const statements are all valid:</span>
+            <br />
+            <br />
+            <div class="code">
+                CONST led_bank = 225 <br />
+                Const On = 1 <br />
+                const OFF = 0 <br />
+                const INST_PTR = R0
+            </div>
+            <br />
+            <span>
+                Named constants may be used in place of instruction arguments only.  The following two instruction statements (after the const statements)
+                are equivalent:
+            </span>
+            <br />
+            <br />
+            <div class="code">
+                const BTN_UP = 0 <br />
+                const BTN_DOWN = 1 <br />
+                const BTN_PRESSED = 2 <br />
+                const BTN_STATE = R10 <br />
+                <br />
+                SET R10 2 <br />
+                SET BTN_STATE BTN_PRESSED
+            </div>
+            <br />
+            <span>
+                Named constants can only be used in the scope that they are defined in and in any nested scopes within that scope.  That is, constants defined 
+                in a core scope can only be used within that core; in a group scope then in all the cores within that group; at root scope then everywhere in the design.
+                Named constants must be unique within the scope they are defined and all parent scopes of that scope.
+            </span>
+            <br />
+            <br />
+            <span>In this example, a const statement is written at each of the three scopes:</span>
+            <br />
+            <br />
+            <div class="code">
+                const ROOT = 10 <br />
+                <br />
+                Group0.*:: <br />
+                <div class="code indented-code">
+                    const GROUP_0 = 20
+                </div>
+                <br />
+                Group0.Core0:: <br />
+                <div class="code indented-code">
+                    const CORE_0 = 30 <br />
+                    <br />
+                    SET R1 ROOT <br />
+                    SET R2 GROUP_0 <br />
+                    SET R3 CORE_0
+                </div>
+                <br />
+                Group0.Core1:: <br />
+                <div class="code indented-code">
+                    const CORE_1 = 40 <br />
+                    <br />
+                    SET R1 ROOT <br />
+                    SET R2 GROUP_0 <br />
+                    SET R3 CORE_1
+                </div>
+                <br />
+                Core2::
+                <div class="code indented-code">
+                    const CORE_2 = 50 <br />
+                    <br />
+                    SET R1 ROOT <br />
+                    SET R2 CORE_2
+                </div>
+            </div>
+            <br />
+            <span>
+                For more information on scopes, see the documentation regarding <b><a href="ScopeStatements.html">scope statements</a></b>.
+            </span>
+            <br />
+            <br />
+        </div>
+    </div>
+</body>
+</html>

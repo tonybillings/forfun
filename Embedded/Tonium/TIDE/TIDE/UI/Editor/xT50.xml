@@ -1,0 +1,106 @@
+﻿<SyntaxDefinition name="xT50" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+  <Color name="Comment" foreground="#969696" />
+  <Color name="Keyword" foreground="#DB59BB" />
+  <Color name="ConfigParam" foreground="#9226FF" />
+  <Color name="Digit" foreground="#9A69D6" />
+  <Color name="Separator" foreground="#ED4035" />
+
+  <RuleSet ignoreCase="true">
+    
+    <!-- Comments -->
+    <Span color="Comment" begin="\#" />
+    
+    <!-- Operations -->
+    <Keywords color="Keyword">
+      <Word>NOP</Word>
+      <Word>IN</Word>
+      <Word>INC</Word>
+      <Word>OUT</Word>
+      <Word>OUTC</Word>
+      <Word>SET</Word>
+      <Word>SETC</Word>
+      <Word>EQ</Word>
+      <Word>EQC</Word>
+      <Word>NEQ</Word>
+      <Word>NEQC</Word>
+      <Word>LT</Word>
+      <Word>LTC</Word>
+      <Word>LTEQ</Word>
+      <Word>LTEQC</Word>
+      <Word>GT</Word>
+      <Word>GTC</Word>
+      <Word>GTEQ</Word>
+      <Word>GTEQC</Word>
+      <Word>ADD</Word>
+      <Word>ADDC</Word>
+      <Word>SUB</Word>
+      <Word>SUBC</Word>
+      <Word>MUL</Word>
+      <Word>MULC</Word>
+      <Word>SHL</Word>
+      <Word>SHLC</Word>
+      <Word>SHR</Word>
+      <Word>SHRC</Word>
+      <Word>LAND</Word>
+      <Word>LANDC</Word>
+      <Word>AND</Word>
+      <Word>ANDC</Word>
+      <Word>NAND</Word>
+      <Word>NANDC</Word>
+      <Word>LOR</Word>
+      <Word>LORC</Word>
+      <Word>OR</Word>
+      <Word>ORC</Word>
+      <Word>NOR</Word>
+      <Word>NORC</Word>
+      <Word>XOR</Word>
+      <Word>XORC</Word>
+      <Word>XNOR</Word>
+      <Word>XNORC</Word>
+      <Word>INV</Word>
+      <Word>BEQ</Word>
+      <Word>BEQC</Word>
+      <Word>BNEQ</Word>
+      <Word>BNEQC</Word>
+      <Word>DLYUS</Word>
+      <Word>DLYMS</Word>
+      <Word>SDLY</Word>
+      <Word>SDLYC</Word>
+      <Word>GOTO</Word>
+      <Word>CONST</Word>
+    </Keywords>
+
+    <!-- Registers -->
+    <Rule color="Keyword">
+      (r|R)[\d]{1,}
+    </Rule>
+    
+    <!-- Config Statement Parameters -->
+    <Rule color="ConfigParam">
+      (?&lt;=\[[ ]*)[pP][0-9]+(?=([ ]+|\=))
+    </Rule>
+    <Rule color="ConfigParam">
+      (?&lt;=\[[ ]*)(clock)(?=([ ]+|\=))
+    </Rule>
+    <Rule color="ConfigParam">
+      (?&lt;=\=[ ]*)(input|input_pulldown|input_pullup|output)(?=([ ]+|\,))
+    </Rule>
+
+    <!-- Separators -->
+    <Keywords color="Separator">
+      <Word>:</Word>
+      <Word>,</Word>
+      <Word>[</Word>
+      <Word>]</Word>
+      <Word>=</Word>
+    </Keywords>
+
+    <!-- Digits -->
+    <Rule color="Digit">
+      \b0[xX][0-9a-fA-F]{1,2}\b   # hexadecimal
+      |\b[\d]+\b                  # decimal
+      |\b[01]{1,8}[bB]\b          # binary
+    </Rule>
+    
+  </RuleSet>
+</SyntaxDefinition>

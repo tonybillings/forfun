@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Multi-core Architecture</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">Multi-core Architecture</span>
+
+        <div id="content-container">
+            <span>
+                The Tonium processor can execute multiple program ROM's in parallel via the
+                instantiation of multiple cores. The number of cores instantiated is directly proportional
+                to the number of programs defined, whereby each program is executed by a single core.  The total
+                number of cores that can be instantiated is only limited by the floorspace available on a
+                given FPGA chip, though an increase in the number of cores will result in an increase in
+                compilation and synthesis time.
+            </span>
+            <br />
+            <br />
+            <img src="../Images/Multi-core_Architecture.png" />
+            <br />
+            <br />
+            <span>
+                The xT50 assembly and Tranquil languages use different syntax for writing multi-threaded
+                code.  See their respective documentation regarding for more details.
+            </span>
+            <br />
+            <br />
+        </div>
+    </div>
+</body>
+</html>

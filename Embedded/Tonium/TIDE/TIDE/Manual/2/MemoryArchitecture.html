@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Memory Architecture</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">Memory Architecture</span>
+
+        <div id="content-container">
+            <span>
+                Each processor core has 16 bytes of L1 cache, identified as registers R0 through R15.
+                It is important to note that R0 is used to store the program instruction pointer, so
+                writing to this value has the effect of jumping to a specific instruction.  L1 cache can
+                be written to and read from in a single clock cycle and therefore is the preferred method
+                of saving data when possible.
+            </span>
+            <br />
+            <br />
+            <span>
+                When more memory is needed, 224 bytes of L2 cache is available in the form of a true dual-port
+                block memory module that is instantiated for each core.  It is possible for a pair of cores
+                to utilize the same block memory module for the purpose of sharing data between executing threads.
+                While the L2 cache offers extended memory to a core, a read operation takes two clock cycles to
+                complete.  The block memory module is configured in WRITE_FIRST mode, which means that a core can
+                immediately read a value from an address that it has just written to, effectively making write
+                operations complete in one clock cycle.
+            </span>
+            <br />
+            <br />
+            <img src="../Images/Memory_Architecture.png" />
+            <br />
+            <br />
+            <span>
+                The xT50 assembly and Tranquil languages use different syntax for grouping cores together
+                in order to share memory between them.  See their respective documentation for more details.
+            </span>
+            <br />
+            <br />
+        </div>
+    </div>
+</body>
+</html>

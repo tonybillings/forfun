@@ -1,0 +1,234 @@
+﻿Build started 6/2/2014 5:29:59 PM.
+     1>Project "C:\Users\Robert\Documents\Arduino\sketches\DigiSafe\DigiSafe.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino" /I"C:\Program Files (x86)\Arduino\hardware\arduino\variants\mega" /IC:\Users\Robert\Documents\Arduino\libraries\Bones /IC:\Users\Robert\Documents\Arduino\libraries\Bones\utility /I"C:\Program Files (x86)\Arduino\libraries\Wire" /I"C:\Program Files (x86)\Arduino\libraries\Wire\utility" /IC:\Users\Robert\Documents\Arduino\libraries\Adafruit_GFX /IC:\Users\Robert\Documents\Arduino\libraries\Adafruit_GFX\utility /IC:\Users\Robert\Documents\Arduino\libraries\Adafruit_TFTLCD /IC:\Users\Robert\Documents\Arduino\libraries\Adafruit_TFTLCD\utility /IC:\Users\Robert\Documents\Arduino\libraries\TouchScreen /IC:\Users\Robert\Documents\Arduino\libraries\TouchScreen\utility /IC:\Users\Robert\Documents\Arduino\libraries\Adafruit_Trellis /IC:\Users\Robert\Documents\Arduino\libraries\Adafruit_Trellis\utility /I"C:\Program Files (x86)\Arduino\libraries" /I"C:\Program Files (x86)\Arduino\hardware\arduino\libraries" /I"C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers" /IC:\Users\Robert\Documents\Arduino\libraries /I"C:\Program Files (x86)\Arduino\hardware\tools\avr\\avr\include" /I"C:\Program Files (x86)\Arduino\hardware\tools\avr\\avr\include\avr" /I"C:\Program Files (x86)\Arduino\hardware\tools\avr\\avr" /I"C:\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D __AVR_ATmega2560__ /D ARDUINO=105 /D ARDUINO_MAIN /D __AVR__ /D __avr__ /D F_CPU=16000000L /D __cplusplus /D _MBCS /X /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /FI"C:\Users\Robert\Documents\Arduino\sketches\DigiSafe\Visual Micro\.DigiSafe.vsarduino.h" /analyze- /errorReport:prompt MainScreen.cpp NumPadScreen.cpp
+         NumPadScreen.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(26): warning C4005: '__asm__' : macro redefinition
+                 c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(21) : see previous definition of '__asm__'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\robert\documents\arduino\sketches\digisafe\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(106): error C3646: '__ATTR_NORETURN__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(278): error C3646: '__ATTR_NORETURN__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(290): error C3646: '__ATTR_MALLOC__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(319): error C3646: '__ATTR_MALLOC__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(338): error C3646: '__ATTR_MALLOC__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\pgmspace.h(123): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\interrupt.h(110): error C2010: '[' : unexpected in macro formal parameter list
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\interrupt.h(110): error C2010: ']' : unexpected in macro formal parameter list
+     1>c:\program files (x86)\arduino\hardware\arduino\cores\arduino\arduino.h(117): error C2732: linkage specification contradicts earlier specification for 'setup'
+                 c:\program files (x86)\arduino\hardware\arduino\cores\arduino\arduino.h(117) : see declaration of 'setup'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stdarg.h(43): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(3): error C2653: 'MainScreen' : is not a class or namespace name
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(5): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(5): error C2228: left of '.setCursor' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(6): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(6): error C2228: left of '.setTextColor' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(6): error C2065: 'showIp' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(7): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(7): error C2228: left of '.setTextSize' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(8): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(8): error C2228: left of '.println' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(8): error C2065: 'ip' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(11): error C2653: 'MainScreen' : is not a class or namespace name
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(13): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(13): error C2228: left of '.PixelsX' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(14): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(14): error C2228: left of '.PixelsY' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(15): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(15): error C2228: left of '.PixelsLength' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(16): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(16): error C2228: left of '.drawPixel' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(17): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(17): error C2228: left of '.LinesLength' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(18): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(18): error C2228: left of '.drawFastHLine' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(18): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(18): error C2228: left of '.Lines' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(21): error C2653: 'MainScreen' : is not a class or namespace name
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(23): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(23): error C2228: left of '.drawFastHLine' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(23): error C2228: left of '.width' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(24): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(24): error C2228: left of '.fillRect' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(24): error C2228: left of '.width' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(25): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(25): error C2228: left of '.drawFastHLine' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(25): error C2228: left of '.width' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(26): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(26): error C2228: left of '.setCursor' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(27): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(27): error C2228: left of '.setTextColor' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(28): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(28): error C2228: left of '.setTextSize' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(29): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(29): error C2228: left of '.println' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.cpp(6): error C2084: function 'Bones::NumPadScreen::NumPadScreen(void)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.h(22) : see previous definition of '{ctor}'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.cpp(11): error C2084: function 'void Bones::NumPadScreen::Update(bool,TSPoint)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.h(25) : see previous definition of 'Update'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.cpp(24): error C2084: function 'void Bones::NumPadScreen::ResetNumPad(void)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.h(20) : see previous definition of 'ResetNumPad'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.cpp(30): error C2084: function 'void Bones::NumPadScreen::Draw(void)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.h(24) : see previous definition of 'Draw'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.cpp(38): error C2084: function 'void Bones::NumPadScreen::DrawButton(Bones::ScreenButton &)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.h(17) : see previous definition of 'DrawButton'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.cpp(44): error C2084: function 'void Bones::NumPadScreen::DrawNumPad(void)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.h(16) : see previous definition of 'DrawNumPad'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.cpp(62): error C2084: function 'void Bones::NumPadScreen::DrawNumPadButton(int,int)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.h(18) : see previous definition of 'DrawNumPadButton'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.cpp(67): error C2084: function 'void Bones::NumPadScreen::DrawPushedNumPadButton(int,int)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\numpadscreen.h(19) : see previous definition of 'DrawPushedNumPadButton'
+         MainScreen.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(26): warning C4005: '__asm__' : macro redefinition
+                 c:\users\robert\documents\arduino\sketches\digisafe\visual micro\.digisafe.vsarduino.h(21) : see previous definition of '__asm__'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\robert\documents\arduino\sketches\digisafe\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(106): error C3646: '__ATTR_NORETURN__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(278): error C3646: '__ATTR_NORETURN__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(290): error C3646: '__ATTR_MALLOC__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(319): error C3646: '__ATTR_MALLOC__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\stdlib.h(338): error C3646: '__ATTR_MALLOC__' : unknown override specifier
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\pgmspace.h(123): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\interrupt.h(110): error C2010: '[' : unexpected in macro formal parameter list
+     1>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\interrupt.h(110): error C2010: ']' : unexpected in macro formal parameter list
+     1>c:\program files (x86)\arduino\hardware\arduino\cores\arduino\arduino.h(117): error C2732: linkage specification contradicts earlier specification for 'setup'
+                 c:\program files (x86)\arduino\hardware\arduino\cores\arduino\arduino.h(117) : see declaration of 'setup'
+     1>c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stdarg.h(43): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(3): error C2653: 'MainScreen' : is not a class or namespace name
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(5): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(5): error C2228: left of '.setCursor' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(6): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(6): error C2228: left of '.setTextColor' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(6): error C2065: 'showIp' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(7): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(7): error C2228: left of '.setTextSize' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(8): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(8): error C2228: left of '.println' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(8): error C2065: 'ip' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(11): error C2653: 'MainScreen' : is not a class or namespace name
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(13): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(13): error C2228: left of '.PixelsX' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(14): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(14): error C2228: left of '.PixelsY' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(15): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(15): error C2228: left of '.PixelsLength' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(16): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(16): error C2228: left of '.drawPixel' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(17): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(17): error C2228: left of '.LinesLength' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(18): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(18): error C2228: left of '.drawFastHLine' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(18): error C2065: 'logo' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(18): error C2228: left of '.Lines' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(21): error C2653: 'MainScreen' : is not a class or namespace name
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(23): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(23): error C2228: left of '.drawFastHLine' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(23): error C2228: left of '.width' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(24): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(24): error C2228: left of '.fillRect' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(24): error C2228: left of '.width' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(25): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(25): error C2228: left of '.drawFastHLine' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(25): error C2228: left of '.width' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(26): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(26): error C2228: left of '.setCursor' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(27): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(27): error C2228: left of '.setTextColor' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(28): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(28): error C2228: left of '.setTextSize' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(29): error C2065: 'tft' : undeclared identifier
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(29): error C2228: left of '.println' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(4): error C2084: function 'void DrawIp(void)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(3) : see previous definition of 'DrawIp'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(12): error C2084: function 'void DrawLogo(void)' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(11) : see previous definition of 'DrawLogo'
+     1>c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(22): error C2084: function 'void DrawCode(char [])' already has a body
+                 c:\users\robert\documents\arduino\sketches\digisafe\mainscreen.cpp(21) : see previous definition of 'DrawCode'
+         Generating Code...
+     1>Done Building Project "C:\Users\Robert\Documents\Arduino\sketches\DigiSafe\DigiSafe.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.67

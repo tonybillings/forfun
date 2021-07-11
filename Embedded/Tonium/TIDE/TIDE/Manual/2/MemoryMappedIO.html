@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Memory-mapped IO</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">Memory-mapped IO</span>
+
+        <div id="content-container">
+            <span>
+                A processor core reads and writes data to external devices by utilizing an 8-bit address space.
+                Bytes 0 to 223 are mapped to the block memory module that is instantiated for each core (cores within
+                the same group share a single block memory module).  Bytes 224 to 255 are user-configurable and can be mapped
+                to any one of the available IO pins on the FPGA board.
+            </span>
+            <br />
+            <br />
+            <span>
+                For more information on how to read/write data to external devices, see the <b><a href="InstructionSet.html">Instruction Set</a></b> section
+                regarding the IN/OUT operations.
+            </span>
+            <br />
+            <br />
+            <span>
+                The xT50 assembly and Tranquil languages use different syntax for configuring memory-mapped IO addresses.
+                See their respective documentation for more details.
+            </span>
+            <br />
+            <br />
+            <span>Example of a memory-mapped IO design using the Mojo v3 board with IO Shield:</span>
+            <br />
+            <br />
+            <img src="../Images/Memory-mapped_IO_Example.png" />
+            <br />
+            <br />
+        </div>
+    </div>
+</body>
+</html>

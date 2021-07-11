@@ -1,0 +1,12 @@
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.csprojResolveAssemblyReference.cache
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.dll
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.pdb
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.dll
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.pdb
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.dll
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.pdb
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.csprojResolveAssemblyReference.cache
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.dll
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.pdb

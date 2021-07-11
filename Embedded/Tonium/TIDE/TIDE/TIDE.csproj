@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9DF0D33-2549-4E0C-8124-08F76EA35CEF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TIDE</RootNamespace>
+    <AssemblyName>TIDE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>UI\Icons\Tonium_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ColorFont, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\ColorFont.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.AvalonEdit">
+      <HintPath>dll\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Core\Code\Parsing\CodeTree.cs" />
+    <Compile Include="Core\Code\Parsing\CodeTreeNode.cs" />
+    <Compile Include="Core\Code\Parsing\ICodeTreeNode.cs" />
+    <Compile Include="Core\Code\Parsing\SyntaxException.cs" />
+    <Compile Include="Core\Code\Parsing\TranquilNode.cs" />
+    <Compile Include="Core\Code\VerilogProject.cs" />
+    <Compile Include="Core\Code\VerilogTemplates.cs" />
+    <Compile Include="Core\Code\VerilogTemplateValue.cs" />
+    <Compile Include="Core\Code\Parsing\xT50Converter.cs" />
+    <Compile Include="Core\Code\Parsing\xT50Node.cs" />
+    <Compile Include="Core\IDE\Environment.cs" />
+    <Compile Include="Core\IDE\TextEditor.cs" />
+    <Compile Include="UI\Windows\ErrorsWarningsWindow.xaml.cs">
+      <DependentUpon>ErrorsWarningsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\IseDirectoryWindow.xaml.cs">
+      <DependentUpon>IseDirectoryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Code\Uploader.cs" />
+    <Compile Include="Core\Util\FileManager.cs" />
+    <Compile Include="Core\Util\GridLengthAnimation.cs" />
+    <Compile Include="UI\Windows\ManualWindow.xaml.cs">
+      <DependentUpon>ManualWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="UI\Windows\AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Windows\ErrorsWarningsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Windows\IseDirectoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Windows\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="UI\Windows\AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Windows\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="UI\Windows\ManualWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Code\Compiler.cs" />
+    <Compile Include="Core\IDE\Logger.cs" />
+    <Compile Include="Core\IDE\Options.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="FPGA\constraints.ucf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\project.tcl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\block_memory.ngc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\block_memory.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\core.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\custom_clock.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\synchronizer.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\timers.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\top_module.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\segment_display_decoder.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\prog_roms.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\processor.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\segment_display_rom.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FPGA\verilog\reset_conditioner.v">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Icons\Hash_Icon.png" />
+    <Resource Include="UI\Icons\Validate_Icon.png" />
+    <Resource Include="UI\Icons\Validate_Icon_Small.png" />
+    <Resource Include="UI\Icons\Manual_Icon.png" />
+    <Resource Include="UI\Images\Error_Icon.png" />
+    <Resource Include="UI\Images\Info_Icon.png" />
+    <Resource Include="UI\Images\Warning_Icon.png" />
+    <Resource Include="UI\Icons\Code_Icon.png" />
+    <Resource Include="UI\Icons\Tonium_Icon.ico" />
+    <Resource Include="UI\Icons\Compile_Icon.png" />
+    <Resource Include="UI\Icons\Upload_Icon.png" />
+    <Resource Include="UI\Icons\Open_Icon_Small.png" />
+    <Resource Include="UI\Icons\New_Icon_Small.png" />
+    <Resource Include="UI\Icons\Font_Icon.png" />
+    <Resource Include="UI\Icons\SaveAs_Icon.png" />
+    <Resource Include="UI\Icons\Exit_Icon.png" />
+    <Resource Include="UI\Icons\Save_Icon.png" />
+    <Resource Include="UI\Icons\Save_Icon_Small.png" />
+    <Resource Include="UI\Icons\New_Icon.png" />
+    <Resource Include="UI\Icons\Open_Icon.png" />
+    <Resource Include="UI\Icons\Compile_Icon_Small.png" />
+    <Resource Include="UI\Icons\Upload_Icon_Small.png" />
+    <Resource Include="UI\Icons\Indent_Left_Icon.png" />
+    <Resource Include="UI\Icons\Indent_Right_Icon.png" />
+    <Resource Include="UI\Icons\Comment_Icon.png" />
+    <Resource Include="UI\Icons\Uncomment_Icon.png" />
+    <Resource Include="UI\Icons\Tab_Icon.png" />
+    <Resource Include="UI\Images\About_Tonium.png" />
+    <None Include="FPGA\verilog\globals.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Resource Include="UI\Icons\USB_Icon.png" />
+    <Resource Include="UI\Icons\ISE_Icon.png" />
+    <None Include="DLL\CSerial.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Resource Include="UI\Icons\Flash_Icon.png" />
+    <Resource Include="UI\Icons\RAM_Icon.png" />
+    <Resource Include="UI\Icons\Smiley_Icon.png" />
+    <Resource Include="UI\Icons\Undo_Icon.png" />
+    <Resource Include="UI\Icons\Cut_Icon.png" />
+    <Resource Include="UI\Icons\Paste_Icon.png" />
+    <Resource Include="UI\Icons\Copy_Icon.png" />
+    <Resource Include="UI\Icons\Eraser_Icon.png" />
+    <Resource Include="UI\Icons\SelectAll_Icon.png" />
+    <Resource Include="UI\Icons\Refresh_Icon.png" />
+    <Content Include="DLL\ColorFont.dll" />
+    <Content Include="DLL\ICSharpCode.AvalonEdit.dll" />
+    <Content Include="Manual\2\ProgramROM.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\2\ConfigurableDesign.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\3\ConstStatements.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\3\NumeralLiterals.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\3\ScopeStatements.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\3\ConfigStatements.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\3\CommentingCode.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\Images\Memory-mapped_IO_Example.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\Images\Memory_Architecture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\Images\Multi-core_Architecture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\Images\Overview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\2\InstructionSet.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\2\MultiCoreArchitecture.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\2\MemoryArchitecture.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\2\MemoryMappedIO.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\3\LabelStatements.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\3\InstructionStatements.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\Images\Scopes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\_Template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\1\Overview.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\Images\Tonium_Logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\Index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manual\Styles\Common.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Editor\Tranquil.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Editor\xT50.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

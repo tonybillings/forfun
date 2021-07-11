@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XPBonesDataImport", "XPBonesDataImport", "{B48C5AA5-B6DC-47E5-BCA9-A66A5230E39B}"
+EndProject
+Project("{39E2626F-3545-4960-A6E8-258AD8476CE5}") = "XPBonesDataImport.Packaging", "XPBonesDataImport\XPBonesDataImport.Packaging\XPBonesDataImport.Packaging.androidproj", "{06C30F34-B507-4175-B878-2E51DE470A29}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XPBonesDataImport.NativeActivity", "XPBonesDataImport\XPBonesDataImport.NativeActivity\XPBonesDataImport.NativeActivity.vcxproj", "{2BA800F7-3D79-4C39-820F-79A984421515}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|ARM.ActiveCfg = Debug|ARM
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|ARM.Build.0 = Debug|ARM
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|ARM.Deploy.0 = Debug|ARM
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|ARM64.Build.0 = Debug|ARM64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|x64.ActiveCfg = Debug|x64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|x64.Build.0 = Debug|x64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|x64.Deploy.0 = Debug|x64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|x86.ActiveCfg = Debug|x86
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|x86.Build.0 = Debug|x86
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Debug|x86.Deploy.0 = Debug|x86
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|ARM.ActiveCfg = Release|ARM
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|ARM.Build.0 = Release|ARM
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|ARM.Deploy.0 = Release|ARM
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|ARM64.ActiveCfg = Release|ARM64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|ARM64.Build.0 = Release|ARM64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|ARM64.Deploy.0 = Release|ARM64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|x64.ActiveCfg = Release|x64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|x64.Build.0 = Release|x64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|x64.Deploy.0 = Release|x64
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|x86.ActiveCfg = Release|x86
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|x86.Build.0 = Release|x86
+		{06C30F34-B507-4175-B878-2E51DE470A29}.Release|x86.Deploy.0 = Release|x86
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Debug|ARM.Build.0 = Debug|ARM
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Debug|ARM64.Build.0 = Debug|ARM64
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Debug|x64.ActiveCfg = Debug|x64
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Debug|x64.Build.0 = Debug|x64
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Debug|x86.ActiveCfg = Debug|x86
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Debug|x86.Build.0 = Debug|x86
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Release|ARM.ActiveCfg = Release|ARM
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Release|ARM.Build.0 = Release|ARM
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Release|ARM64.ActiveCfg = Release|ARM64
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Release|ARM64.Build.0 = Release|ARM64
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Release|x64.ActiveCfg = Release|x64
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Release|x64.Build.0 = Release|x64
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Release|x86.ActiveCfg = Release|x86
+		{2BA800F7-3D79-4C39-820F-79A984421515}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06C30F34-B507-4175-B878-2E51DE470A29} = {B48C5AA5-B6DC-47E5-BCA9-A66A5230E39B}
+		{2BA800F7-3D79-4C39-820F-79A984421515} = {B48C5AA5-B6DC-47E5-BCA9-A66A5230E39B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://urbanitestudios.visualstudio.com/
+		SccProjectUniqueName0 = XPBonesDataImport\\XPBonesDataImport.NativeActivity\\XPBonesDataImport.NativeActivity.vcxproj
+		SccProjectTopLevelParentUniqueName0 = XPBonesDataImport.sln
+		SccProjectName0 = XPBonesDataImport/XPBonesDataImport.NativeActivity
+		SccLocalPath0 = XPBonesDataImport\\XPBonesDataImport.NativeActivity
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = XPBonesDataImport\\XPBonesDataImport.Packaging\\XPBonesDataImport.Packaging.androidproj
+		SccProjectTopLevelParentUniqueName2 = XPBonesDataImport.sln
+		SccProjectName2 = XPBonesDataImport/XPBonesDataImport.Packaging
+		SccLocalPath2 = XPBonesDataImport\\XPBonesDataImport.Packaging
+	EndGlobalSection
+EndGlobal

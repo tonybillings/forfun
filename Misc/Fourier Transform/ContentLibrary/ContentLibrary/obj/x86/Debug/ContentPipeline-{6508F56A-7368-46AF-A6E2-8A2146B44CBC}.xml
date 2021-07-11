@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{6508F56A-7368-46AF-A6E2-8A2146B44CBC}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\robert.billings\Desktop\FourierTransform\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-06-20T10:12:47.4184808-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

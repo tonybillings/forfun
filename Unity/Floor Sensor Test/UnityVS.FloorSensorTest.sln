@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.FloorSensorTest.CSharp", "UnityVS.FloorSensorTest.CSharp.csproj", "{C90295E8-6D5F-1B20-0A95-9AF35422AA88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.FloorSensorTest.CSharp.Editor", "UnityVS.FloorSensorTest.CSharp.Editor.csproj", "{6CFFDE82-F41B-2B3F-6DD8-7BA6D7294183}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C90295E8-6D5F-1B20-0A95-9AF35422AA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90295E8-6D5F-1B20-0A95-9AF35422AA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90295E8-6D5F-1B20-0A95-9AF35422AA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90295E8-6D5F-1B20-0A95-9AF35422AA88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFFDE82-F41B-2B3F-6DD8-7BA6D7294183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFFDE82-F41B-2B3F-6DD8-7BA6D7294183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFFDE82-F41B-2B3F-6DD8-7BA6D7294183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFFDE82-F41B-2B3F-6DD8-7BA6D7294183}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

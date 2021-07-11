@@ -1,0 +1,31 @@
+﻿Build started 11/30/2015 8:24:29 PM.
+     1>Project "C:\Users\Robert\documents\visual studio 2015\Projects\TIDE\CSerial\CSerial.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt CSerial.cpp Serial.cpp
+         Serial.cpp
+     1>c:\users\robert\documents\visual studio 2015\projects\tide\cserial\serial.cpp(92): warning C4018: '<': signed/unsigned mismatch
+         CSerial.cpp
+     1>c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.cpp(10): warning C4273: 'CSerial::Init': inconsistent dll linkage
+         c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.h(13): note: see previous definition of 'Init'
+     1>c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.cpp(16): warning C4273: 'CSerial::Write': inconsistent dll linkage
+         c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.h(14): note: see previous definition of 'Write'
+     1>c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.cpp(24): warning C4273: 'CSerial::ReadData': inconsistent dll linkage
+         c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.h(15): note: see previous definition of 'ReadData'
+     1>c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.cpp(30): warning C4273: 'CSerial::ToggleDtr': inconsistent dll linkage
+         c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.h(16): note: see previous definition of 'ToggleDtr'
+     1>c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.cpp(36): warning C4273: 'CSerial::Close': inconsistent dll linkage
+         c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.h(17): note: see previous definition of 'Close'
+     1>c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.cpp(42): warning C4273: 'CSerial::IsConnected': inconsistent dll linkage
+         c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.h(18): note: see previous definition of 'IsConnected'
+         Generating Code...
+     1>c:\users\robert\documents\visual studio 2015\projects\tide\cserial\cserial.cpp(27): warning C4715: 'ReadData': not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Robert\documents\visual studio 2015\Projects\TIDE\Debug\CSerial.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Robert\documents\visual studio 2015\Projects\TIDE\Debug\CSerial.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Robert\documents\visual studio 2015\Projects\TIDE\Debug\CSerial.lib" /MACHINE:X86 /DLL Debug\CSerial.obj
+         Debug\Serial.obj
+            Creating library C:\Users\Robert\documents\visual studio 2015\Projects\TIDE\Debug\CSerial.lib and object C:\Users\Robert\documents\visual studio 2015\Projects\TIDE\Debug\CSerial.exp
+         CSerial.vcxproj -> C:\Users\Robert\documents\visual studio 2015\Projects\TIDE\Debug\CSerial.dll
+     1>Done Building Project "C:\Users\Robert\documents\visual studio 2015\Projects\TIDE\CSerial\CSerial.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.96

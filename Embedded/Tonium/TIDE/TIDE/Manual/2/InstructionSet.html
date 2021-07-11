@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Instruction Set</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+        table
+        {
+            border-collapse: collapse;
+            table-layout: fixed; 
+            width: 1px; 
+            text-align: left;
+        }
+
+        tr, td
+        {
+            height: 25px;
+            overflow: hidden;
+            border-bottom: 1px solid gray;
+        }
+
+        th
+        {
+             border-bottom: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">Instruction Set</span>
+
+        <div id="content-container">
+            <span>Arguments named DEST (destination), SRC (source), and OP1/OP2 (operator 1/2) are register addresses while CONST (constant) arguments are numeral literals.</span>
+            <br />
+            <br />
+            <table>
+                <thead>
+                    <tr>
+                        <th width="100px">Operation</th><th width="100px">Arg1</th><th width="100px">Arg2</th><th width="100px">Arg3</th><th width="300px">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>NOP</td><td>--</td><td>--</td><td>--</td><td>No operation.  Used to delay the processor core by one clock cycle.</td></tr>
+                    <tr><td>IN</td><td>DEST</td><td>OP1</td><td>CONST</td><td>Read value from OP1 memory-mapped address (plus CONST offset) and store in DEST register.</td></tr>
+                    <tr><td>INC</td><td>DEST</td><td>CONST</td><td>--</td><td>Read value from CONST memory-mapped address and store in DEST register.</td></tr>
+                    <tr><td>OUT</td><td>SRC</td><td>OP1</td><td>CONST</td><td>Write value in SRC register to OP1 memory-mapped address (plus CONST offset).</td></tr>
+                    <tr><td>OUTC</td><td>SRC</td><td>CONST</td><td>--</td><td>Write value in SRC register to CONST memory-mapped address.</td></tr>
+                    <tr><td>SET</td><td>DEST</td><td>OP1</td><td>--</td><td>Write value in OP1 register to DEST register.</td></tr>
+                    <tr><td>SETC</td><td>DEST</td><td>CONST</td><td>--</td><td>Write CONST value to DEST register.</td></tr>
+                    <tr><td>EQ</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 == OP2</td></tr>
+                    <tr><td>EQC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 == CONST</td></tr>
+                    <tr><td>NEQ</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 != OP2</td></tr>
+                    <tr><td>NEQC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 != CONST</td></tr>
+                    <tr><td>LT</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 &lt; OP2</td></tr>
+                    <tr><td>LTC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 &lt; CONST</td></tr>
+                    <tr><td>LTEQ</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 &lt;= OP2</td></tr>
+                    <tr><td>LTEQC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 &lt;= CONST</td></tr>
+                    <tr><td>GT</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 > OP2</td></tr>
+                    <tr><td>GTC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 > CONST</td></tr>
+                    <tr><td>GTEQ</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 >= OP2</td></tr>
+                    <tr><td>GTEQC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 >= CONST</td></tr>
+                    <tr><td>ADD</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 + OP2</td></tr>
+                    <tr><td>ADDC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 + CONST</td></tr>
+                    <tr><td>SUB</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 - OP2</td></tr>
+                    <tr><td>SUBC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 - CONST</td></tr>
+                    <tr><td>MUL</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 * OP2</td></tr>
+                    <tr><td>MULC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 * CONST</td></tr>
+                    <tr><td>SHL</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 &lt;&lt; OP2</td></tr>
+                    <tr><td>SHLC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 &lt;&lt; CONST</td></tr>
+                    <tr><td>SHR</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 >> OP2</td></tr>
+                    <tr><td>SHRC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 >> CONST</td></tr>
+                    <tr><td>LAND</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 && OP2</td></tr>
+                    <tr><td>LANDC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 && CONST</td></tr>
+                    <tr><td>AND</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 & OP2</td></tr>
+                    <tr><td>ANDC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 & CONST</td></tr>
+                    <tr><td>NAND</td><td>DEST</td><td>OP1</td><td>OP2</td><td>~(OP1 & OP2)</td></tr>
+                    <tr><td>NANDC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>~(OP1 & CONST)</td></tr>
+                    <tr><td>LOR</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 || OP2</td></tr>
+                    <tr><td>LORC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 || CONST</td></tr>
+                    <tr><td>OR</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 | OP2</td></tr>
+                    <tr><td>ORC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 | CONST</td></tr>
+                    <tr><td>NOR</td><td>DEST</td><td>OP1</td><td>OP2</td><td>~(OP1 | OP2)</td></tr>
+                    <tr><td>NORC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>~(OP1 | CONST)</td></tr>
+                    <tr><td>XOR</td><td>DEST</td><td>OP1</td><td>OP2</td><td>OP1 ^ OP2</td></tr>
+                    <tr><td>XORC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>OP1 ^ CONST</td></tr>
+                    <tr><td>XNOR</td><td>DEST</td><td>OP1</td><td>OP2</td><td>~(OP1 ^ OP2)</td></tr>
+                    <tr><td>XNORC</td><td>DEST</td><td>OP1</td><td>CONST</td><td>~(OP1 ^ CONST)</td></tr>
+                    <tr><td>INV</td><td>DEST</td><td>OP1</td><td>--</td><td>~OP1</td></tr>
+                    <tr><td>BEQ</td><td>OP1</td><td>OP2</td><td>--</td><td>If OP1 == OP2, skip next instruction.</td></tr>
+                    <tr><td>BEQC</td><td>OP1</td><td>CONST</td><td>--</td><td>If OP1 == CONST, skip next instruction.</td></tr>
+                    <tr><td>BNEQ</td><td>OP1</td><td>OP2</td><td>--</td><td>If OP1 != OP2, skip next instruction.</td></tr>
+                    <tr><td>BNEQC</td><td>OP1</td><td>CONST</td><td>--</td><td>If OP1 != CONST, skip next instruction.</td></tr>
+                </tbody>
+            </table>
+            <br/>
+            <br/>
+        </div>
+    </div>
+</body>
+</html>

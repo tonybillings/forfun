@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>xT50 :: Instruction Statements</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">xT50 :: Instruction Statements</span>
+
+        <div id="content-container">
+            <span>
+                An instruction statement specifies the operation and zero or more arguments.  The complete list of operations supported can be found <b><a href="../2/InstructionSet.html">here</a></b>.
+                The operation name and register name are not case-sensitive, however user-defined
+                <b><a href="ConstStatements.html">named constants</a></b> and <b><a href="LabelStatements.html">labels</a></b> are.
+                The argument list may be separated by commas and/or spaces.  If the instruction contains a const argument it is not necessary to explicitly call the const version of the operation.
+            </span>
+            <br />
+            <br />
+            <span>The following examples are all valid:</span>
+            <br />
+            <br />
+            <div class="code">
+                SETC R1, 123 <br />
+                SETC R1 123 <br />
+                setc r1 123 <br />
+                set r1 123 <br />
+                set r1 r2
+            </div>
+            <br />
+            <span>The following example would not be valid since a register is specified where a const value is expected:</span>
+            <br />
+            <br />
+            <div class="code">
+                setc r1 r2
+            </div>
+            <br />
+            <span>The only reason to explicitly call the const version of an operation is for compile-time validation of the argument list.</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Just some common code used on several Arduino-based projects.  

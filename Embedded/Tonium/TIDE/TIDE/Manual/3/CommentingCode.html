@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>xT50 :: Commenting Code</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+        table
+        {
+            table-layout: fixed;
+        }
+
+        tr
+        {
+            height: 16px;
+            line-height: 16px
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">xT50 :: Commenting Code</span>
+
+        <div id="content-container">
+            <span>
+                Single-line comments are supported with the use of the pound (#) character.  Text following this character, on the same line as where this character
+                is used, will be ignored in the compilation process.
+            </span>
+            <br />
+            <br />
+            <span>
+                The use of <b><a href="ConstStatements.html">named constants</a></b> and comments is highly recommended for clear and descriptive code. The following example illustrates this practice in good form:
+            </span>
+            <br />
+            <br />
+            <div class="code">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 200px"></th><th  style="width: 420px"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="2"># This program will blink an LED bank,</td></tr>
+                        <tr><td colspan="2"># consisting of 8 LED's, simultaneously.</td></tr>
+                        <tr><td colspan="2"># The blink rate can be adjusted by</td></tr>
+                        <tr><td colspan="2"># changing the clock rate or the </td></tr>
+                        <tr><td colspan="2"># delay instructions.</td></tr>
+                        <tr></tr>
+                        <tr><td>[CLOCK = 120]</td><td># Clock rate set to 120 MHz</td></tr>
+                        <tr></tr>
+                        <tr><td>const ON = 255</td><td># Turn on LED bank</td></tr>
+                        <tr><td>const OFF = 0</td><td># Turn off LED bank</td></tr>
+                        <tr><td>const rLED = r1</td><td># Register for current LED bank state</td></tr>
+                        <tr><td>const mLED = 225</td><td># Memory address for LED bank</td></tr>
+                        <tr></tr>
+                        <tr><td colspan="2">init:</td></tr>
+                        <tr><td class="indented-code">set rLED OFF</td><td># Set initial state to off</td></tr>
+                        <tr><td colspan="2">begin_delay:</td></tr>
+                        <tr><td class="indented-code">set r10 0</td><td># Reset first delay counter</td></tr>
+                        <tr><td class="indented-code">set r11 0</td><td># Reset second delay counter</td></tr>
+                        <tr><td class="indented-code">set r12 0</td><td># Reset third delay counter</td></tr>
+                        <tr><td colspan="2">delay:</td></tr>
+                        <tr><td class="indented-code">add r10 r10 1</td><td># Increment first delay counter</td></tr>
+                        <tr><td class="indented-code">beq r10 255</td><td># If first counter equals 255, skip to next counter</td></tr>
+                        <tr><td class="indented-code">goto delay</td><td># Go back to first counter</td></tr>
+                        <tr><td class="indented-code">add r11 r11 1</td><td># Increment second delay counter</td></tr>
+                        <tr><td class="indented-code">beq r11 255</td><td># If second counter equals 255, skip to next counter</td></tr>
+                        <tr><td class="indented-code">goto delay</td><td># Go back to first counter</td></tr>
+                        <tr><td class="indented-code">add r12 r12 1</td><td># Increment third delay counter</td></tr>
+                        <tr><td class="indented-code">beq r12 255</td><td># If third counter equals 255, toggle LED state</td></tr>
+                        <tr><td class="indented-code">goto delay</td><td># Go back to first counter</td></tr>
+                        <tr><td colspan="2">toggle_state:</td></tr>
+                        <tr><td class="indented-code">beq rLED OFF</td><td># If LED's are off, proceed to turn them on</td></tr>
+                        <tr><td class="indented-code">goto turn_led_off</td><td># Proceed to turn LED's off</td></tr>
+                        <tr><td class="indented-code">goto turn_led_on</td><td># Proceed to turn LED's on</td></tr>
+                        <tr><td colspan="2">turn_led_on:</td></tr>
+                        <tr><td class="indented-code">set rLED ON</td><td># Set LED bank state to on</td></tr>
+                        <tr><td class="indented-code">goto blink</td><td># Proceed to update LED bank</td></tr>
+                        <tr><td colspan="2">turn_led_off:</td></tr>
+                        <tr><td class="indented-code">set rLED OFF</td><td># Set LED bank state to off</td></tr>
+                        <tr><td class="indented-code">goto blink</td><td># Proceed to update LED bank</td></tr>
+                        <tr><td colspan="2">blink:</td></tr>
+                        <tr><td class="indented-code">out rLED mLED </td><td># Update LED bank with new state</td></tr>
+                        <tr><td class="indented-code">goto begin_delay</td><td># Restart delay loop</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <br />
+        </div>
+    </div>
+</body>
+</html>

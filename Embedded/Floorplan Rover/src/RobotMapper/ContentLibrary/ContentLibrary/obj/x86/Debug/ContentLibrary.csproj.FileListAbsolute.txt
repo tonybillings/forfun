@@ -1,0 +1,48 @@
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.csprojResolveAssemblyReference.cache
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.dll
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.pdb
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.dll
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.pdb
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.dll
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.pdb
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.csprojResolveAssemblyReference.cache
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.dll
+C:\Users\robert.billings\Desktop\FourierTransform\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Fonts\Arial.xnb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.dll
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\ContentLibrary\ContentLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.dll
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Fonts\Arial.xnb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.dll
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.pdb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.dll
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.pdb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Fonts\Arial.xnb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Models\Beacon.xnb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Models\Path.xnb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Models\Robot.xnb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.dll
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.pdb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.dll
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.pdb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Models\Beacon.xnb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Models\Path.xnb
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Models\Robot.xnb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Fonts\Arial.xnb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Models\Beacon.xnb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Models\Path.xnb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\Content\Models\Robot.xnb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.dll
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\bin\x86\Debug\ContentLibrary.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.dll
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\RobotMapper\ContentLibrary\ContentLibrary\obj\x86\Debug\ContentLibrary.pdb

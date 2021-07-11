@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{727F9505-4973-45A0-8D2D-0AC7244F2FDF}</ProjectGuid>
+    <RootNamespace>BonesDX</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)staging\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)staging\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)staging\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)staging\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)bones;$(ProjectDir)inc;$(ProjectDir)resources</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)bones;$(ProjectDir)inc;$(ProjectDir)resources</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)bones;$(ProjectDir)inc;$(ProjectDir)resources</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)bones;$(ProjectDir)inc;$(ProjectDir)resources</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bones\App.cpp" />
+    <ClCompile Include="bones\CameraComponent.cpp" />
+    <ClCompile Include="bones\Component.cpp" />
+    <ClCompile Include="bones\DDSTextureLoader.cpp" />
+    <ClCompile Include="bones\DirectionalLight.cpp" />
+    <ClCompile Include="bones\DrawableObject.cpp" />
+    <ClCompile Include="bones\Exception.cpp" />
+    <ClCompile Include="bones\File.cpp" />
+    <ClCompile Include="bones\FirstPersonController.cpp" />
+    <ClCompile Include="bones\Graphics.cpp" />
+    <ClCompile Include="bones\HrException.cpp" />
+    <ClCompile Include="bones\Keyboard.cpp" />
+    <ClCompile Include="bones\Light.cpp" />
+    <ClCompile Include="bones\LightComponent.cpp" />
+    <ClCompile Include="bones\Model.cpp" />
+    <ClCompile Include="bones\ModelComponent.cpp" />
+    <ClCompile Include="bones\Mouse.cpp" />
+    <ClCompile Include="bones\Object.cpp" />
+    <ClCompile Include="bones\PointLight.cpp" />
+    <ClCompile Include="bones\ShaderComponent.cpp" />
+    <ClCompile Include="bones\SpotLight.cpp" />
+    <ClCompile Include="bones\Texture2D.cpp" />
+    <ClCompile Include="bones\Timer.cpp" />
+    <ClCompile Include="bones\TransformComponent.cpp" />
+    <ClCompile Include="bones\WICTextureLoader.cpp" />
+    <ClCompile Include="bones\Window.cpp" />
+    <ClCompile Include="bones\Scene.cpp" />
+    <ClCompile Include="src\DemoApp.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bones\App.h" />
+    <ClInclude Include="bones\AppState.h" />
+    <ClInclude Include="bones\BasicMaterial.h" />
+    <ClInclude Include="bones\bones.h" />
+    <ClInclude Include="bones\CameraComponent.h" />
+    <ClInclude Include="bones\Component.h" />
+    <ClInclude Include="bones\ControllerComponent.h" />
+    <ClInclude Include="bones\ControllerState.h" />
+    <ClInclude Include="bones\DDS.h" />
+    <ClInclude Include="bones\DDSTextureLoader.h" />
+    <ClInclude Include="bones\DemoTorus.h" />
+    <ClInclude Include="bones\DemoWinMain.cpp" />
+    <ClInclude Include="bones\DirectionalLight.h" />
+    <ClInclude Include="bones\DirectXHelpers.h" />
+    <ClInclude Include="bones\DrawableObject.h" />
+    <ClInclude Include="bones\Exception.h" />
+    <ClInclude Include="bones\File.h" />
+    <ClInclude Include="bones\FirstPersonController.h" />
+    <ClInclude Include="bones\GfxTypes.h" />
+    <ClInclude Include="bones\Graphics.h" />
+    <ClInclude Include="bones\HrException.h" />
+    <ClInclude Include="bones\IAppObject.h" />
+    <ClInclude Include="bones\IBindable.h" />
+    <ClInclude Include="bones\IComponentContainer.h" />
+    <ClInclude Include="bones\IMaterial.h" />
+    <ClInclude Include="bones\Keyboard.h" />
+    <ClInclude Include="bones\Light.h" />
+    <ClInclude Include="bones\LightComponent.h" />
+    <ClInclude Include="bones\LoaderHelpers.h" />
+    <ClInclude Include="bones\Model.h" />
+    <ClInclude Include="bones\ModelComponent.h" />
+    <ClInclude Include="bones\Mouse.h" />
+    <ClInclude Include="bones\Object.h" />
+    <ClInclude Include="bones\PlatformHelpers.h" />
+    <ClInclude Include="bones\PointLight.h" />
+    <ClInclude Include="bones\Registry.h" />
+    <ClInclude Include="bones\ShaderComponent.h" />
+    <ClInclude Include="bones\SpotLight.h" />
+    <ClInclude Include="bones\Texture2D.h" />
+    <ClInclude Include="bones\Timer.h" />
+    <ClInclude Include="bones\TransformComponent.h" />
+    <ClInclude Include="bones\TypeDefs.h" />
+    <ClInclude Include="bones\WICTextureLoader.h" />
+    <ClInclude Include="bones\Win32.h" />
+    <ClInclude Include="bones\Window.h" />
+    <ClInclude Include="CONFIG.h" />
+    <ClInclude Include="bones\DemoScene.h" />
+    <ClInclude Include="bones\DemoCube.h" />
+    <ClInclude Include="bones\DemoPlayer.h" />
+    <ClInclude Include="bones\DemoRoom.h" />
+    <ClInclude Include="inc\DemoApp.h" />
+    <ClInclude Include="resources\resource.h" />
+    <ClInclude Include="bones\Scene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="bones\ps_default_lighting.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="bones\vs_default_lighting.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\directional_light.png" />
+    <CopyFileToFolders Include="bones\point_light.png" />
+    <CopyFileToFolders Include="bones\spot_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\directional_light.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\point_light.obj" />
+    <CopyFileToFolders Include="bones\spot_light.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\demo_cube.obj" />
+    <CopyFileToFolders Include="bones\demo_plane.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\demo_wall_back.png" />
+    <CopyFileToFolders Include="bones\demo_wall_front.png" />
+    <CopyFileToFolders Include="bones\demo_wall_left.png" />
+    <CopyFileToFolders Include="bones\demo_wall_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\demo_wall_bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\demo_wall_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\demo_cube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\demo_torus.obj">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\demo_torus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bones\demo_cube_ext.obj">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,17 @@
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\bin\Debug\Content\Fonts\Arial.xnb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\bin\Debug\Sounds\Detection.wav
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\bin\Debug\SignalAnalyzer.exe.config
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\bin\Debug\SignalAnalyzer.exe
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\bin\Debug\SignalAnalyzer.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\bin\Debug\ContentLibrary.dll
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\bin\Debug\MathNet.Numerics.dll
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\bin\Debug\ContentLibrary.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\bin\Debug\MathNet.Numerics.xml
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\obj\Debug\SignalAnalyzer.csprojResolveAssemblyReference.cache
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\obj\Debug\SignalAnalyzer.FFT.resources
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\obj\Debug\SignalAnalyzer.Main.resources
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\obj\Debug\SignalAnalyzer.Settings.resources
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\obj\Debug\SignalAnalyzer.Properties.Resources.resources
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\obj\Debug\SignalAnalyzer.csproj.GenerateResource.Cache
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\obj\Debug\SignalAnalyzer.exe
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\SignalAnalyzer\obj\Debug\SignalAnalyzer.pdb

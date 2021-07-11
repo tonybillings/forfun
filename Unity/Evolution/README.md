@@ -1,0 +1,9 @@
+This is a simple demonstration of natural selection.  It simulates dozens to hundreds of life forms on the screen, rendered as quads of the same size, and each life form can potentially have an arm extend from one of its four sides.  The life forms move about on the screen like small-celled organisms in a petri dish (kind of jittery with no real direction).  
+
+They start out by having only one very short arm (also rendered as a  quad). As time goes on, they have a chance to reproduce (asexually), thereby passing their genes (arm lengths) to their children.  A child node doesn't inherit the exact arm lengths of their parent node, but rather some close approximation there of.  That is, any given arm of the child may be a bit longer or shorter than the matching parent's arm.  
+
+The arms act as weapons, immediately killing any other life form they come in contact with.  For that reason, having longer arms is better as it means you can get the other guy before they get you.  Eventually each life form will die of old age if not killed sooner by another life form.  
+
+What naturual selection teaches us is that over time traits that are more favorable for survival tend to be passed on to subsequent generations, just by virtue of being able to reproduce more if given more time for that to happen.  In this simulation, having longer arms means living longer, thereby giving these horny quads more time to self-love and reproduce.  Indeed, size does matter here. 
+
+So as the simulation progresses, what is observed is that the average arm size of all life forms is significantly longer than when the simulation started.  Additionally, while long, one-armed life forms ruled in the beginning, over more time eventually long, four-armed life forms ended up taking over the universe...and they never even knew that they were living in a simulation, powered by a game engine named Unity.  Even simulated life is not without a sense of irony.    

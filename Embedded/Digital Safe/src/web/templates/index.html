@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+<title>DigiSafe</title>
+<link href="{{stylesPath}}/perfect-scrollbar-0.4.10.min.css" rel="stylesheet">
+<link href="{{stylesPath}}/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+<script src="{{scriptsPath}}/jquery-2.1.0.min.js"></script>
+<script src="{{scriptsPath}}/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="{{scriptsPath}}/perfect-scrollbar-0.4.10.with-mousewheel.min.js"></script>
+<script src="{{scriptsPath}}/uploader.js"></script>
+<style>
+
+    body
+    {
+        background-color: black;
+    }
+
+    textarea:focus, input:focus
+    {
+        outline: 0;
+    }
+
+    #logo
+    {
+        width: 800px;
+        height: 30px;
+    }
+    
+    #main-container
+    {
+        border: 1px solid blue;
+        width: 800px;
+        height: 600px;
+        margin: 200px auto 0 auto;
+        display: none;
+    }
+
+    #auth-welcome
+    {
+        display: none;
+    }
+  
+    #auth-login
+    {
+        display: none;
+    }
+
+    .auth
+    {
+        position: relative;
+        text-align: center;
+    }
+
+    .auth-form
+    {
+        z-index: 1;
+        position: absolute;
+        left: 57px;
+        top: 100px;
+    }
+
+    .auth-textbox
+    {
+        z-index: 2;
+        position: absolute;
+        background-color: #BFBFFF;
+        width: 172px;
+        height: 25px;
+        border: 0px solid #BFBFFF;
+        font-family: monospace;
+        font-weight: bolder;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #auth-welcome-textbox-1
+    {
+        left: 560px;
+        top: 155px;
+    }
+
+    #auth-welcome-textbox-2
+    {
+        left: 560px;
+        top: 235px;
+    }
+
+    #auth-welcome-textbox-3
+    {
+        left: 560px;
+        top: 315px;
+    }
+
+    #auth-login-textbox-1
+    {
+        left: 560px;
+        top: 155px;
+    }
+
+    #auth-login-textbox-2
+    {
+        left: 560px;
+        top: 235px;
+    }
+
+    .auth-continue
+    {
+        top: 400px;
+        left: 341px;
+        position: absolute;
+        width: 124px;
+        height: 24px;
+        background: url('{{imagesPath}}/auth-continue.png') bottom;
+    }
+
+    .auth-continue:hover
+    {
+        background-position: 0 0;
+        cursor: pointer;
+    }
+
+    #auth-info
+    {
+        display: none;
+        color: rgb(147, 140, 202);
+        font-family: monospace;
+        font-weight: bolder;
+        font-size: 12px;
+        float: left;
+        margin: 4px 0 0 10px;
+    }
+
+    .auth-info-spacer
+    {
+        margin-left: 25px;
+    }
+
+    #auth-message
+    {
+        display: block;
+        border-top: 1px solid blue;
+        border-bottom: 1px solid blue;
+        top: 500px;
+        width: 99.9%;
+        height: 13px;
+        line-height: 13px;
+        background-color: rgb(255, 0, 0);
+        display: none;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 1px;
+        color: white;
+        font-family: monospace;
+        font-weight: bolder;
+        font-size: 12px;
+        text-align: center;
+    }
+   
+    #filemanager-message
+    {
+        display: block;
+        border-top: 1px solid blue;
+        border-bottom: 1px solid blue;
+        top: 475px;
+        width: 100%;
+        height: 13px;
+        line-height: 13px;
+        background-color: rgb(0, 0, 255);
+        display: none;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 0px;
+        color: white;
+        font-family: monospace;
+        font-weight: bolder;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #filemanager-error
+    {
+        display: block;
+        border-top: 1px solid blue;
+        border-bottom: 1px solid blue;
+        top: 475px;
+        width: 99.9%;
+        height: 13px;
+        line-height: 13px;
+        background-color: rgb(255, 0, 0);
+        display: none;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 1px;
+        color: white;
+        font-family: monospace;
+        font-weight: bolder;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #filemanager-container
+    {
+        display: none;
+        position: relative;
+        text-align: center;
+    }
+
+    #filemanager-control
+    {
+        height: 510px;
+        border-bottom: 1px solid;
+        border-bottom-color: rgba(0,0,255,0); 
+    }
+
+    #filemanager-actionbar
+    {
+        width: 700px;
+        margin: 30px 0 10px 50px;
+        text-align: left;
+        font-family: monospace;
+        font-weight: bolder;
+        font-size: 15px;
+        color: rgb(180, 221, 253);
+    }
+
+    #filemanager-actionbar-table
+    {
+        width: 301px;
+        text-align: center;
+        border-collapse: collapse;
+        margin: 0px;
+        padding: 0px;
+        border-top: 1px solid blue;
+        border-left: 1px solid blue;
+        border-bottom: 1px solid blue;
+    }
+
+    .filemanager-actionbar-table-column
+    {
+        border-right: 1px solid blue;
+        width: 100px;
+    }
+
+    .filemanager-actionbar-table-column:hover
+    {
+        background-color: blue;
+        cursor: pointer;
+    }
+
+    #filemanager-progressbar
+    {
+        position: absolute;
+        top: 0; 
+        left: 50px;
+        width: 299px;
+        height: 19px;
+        display: none;
+    }
+
+    #filemanager-control-table
+    {
+        border: 1px solid blue;
+        margin: 0px 0 0 50px;
+        width: 700px;
+        height: 405px;
+    }
+
+    #filemanager-control-table-header
+    {
+        border-bottom: 1px solid blue;
+        height: 25px;
+    }
+
+    #filemanager-control-table-body
+    {
+        position: relative;
+        overflow: hidden;
+        height: 379px;
+    }
+
+    .table
+    {
+        border-collapse: collapse;
+        table-layout: fixed;
+        overflow: hidden;
+    }
+
+    .column-header, .column
+    {
+        height: 25px;
+        color: rgb(147, 140, 202);
+        font-family: monospace;
+        font-size: 14px;
+        line-height: 25px;
+        display: inline;
+        float: left;
+    }
+
+    .column-header-1
+    {
+        border-right: 1px solid blue;
+        width: 294px;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .column-header-2
+    {
+        border-right: 1px solid blue;
+        width: 199px;
+        text-align: center;
+    }
+    
+    .column-header-3
+    {
+        width: 195px;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .column-1
+    {
+        border-right: 1px solid blue;
+        width: 293px;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .column-2
+    {
+        border-right: 1px solid blue;
+        width: 197px;
+        text-align: center;
+    }
+    
+    .column-3
+    {
+        width: 194px;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .row
+    {
+        height: 25px;
+        width: 700px;
+    }
+
+    .row-selected
+    {
+        background-color: #092040;
+    }
+
+    .table tr:hover
+    {
+        background-color: rgb(0, 0, 255) !important;
+        cursor: pointer;
+    }
+
+    .column-borders
+    {
+        position: absolute;
+        width: 199px;
+        height: 405px;
+        border-left: 1px solid rgb(0, 0, 255);
+        border-right: 1px solid blue;
+        left: 350px;
+    }
+
+    #file-upload
+    {
+        position: absolute;
+        top: -500px
+    }
+
+</style>
+<script>
+
+    DS = new Object();
+    DS.Token = "";
+    DS.LastLogin = "{{LastLogin}}"
+    DS.FailedLoginAttempts = "0";
+    DS.Auth = (function(){
+
+        function init()
+        {
+            preloadImages();
+            window.setTimeout(showScreen, 1000);
+        }
+
+        function preloadImages()
+        {
+            var img1, img2, img3, img4;
+            img1 = new Image();
+            img2 = new Image();
+            img3 = new Image();
+            img4 = new Image();
+            img1.src = '/{{imagesPath}}/auth-continue.png';
+            img2.src = '/{{imagesPath}}/auth-login.png';
+            img3.src = '/{{imagesPath}}/auth-welcome.png';
+            img4.src = '/{{imagesPath}}/logo.png';
+        }
+
+        function showScreen()
+        {
+            if (DS.LastLogin == "Never")
+                showWelcomeScreen();
+            else
+                showLoginScreen();
+            displayCode();
+        }
+
+        function showWelcomeScreen()
+        {
+            $('#auth-welcome-continue').click(validate); 
+            $('.auth-textbox').keydown(hideMessage);
+            $('#main-container').fadeToggle('slow', function() {
+                $('#auth-welcome').fadeToggle('slow');
+            });
+        }
+ 
+        function showLoginScreen()
+        {
+            $('.auth-textbox').keydown(hideMessage);
+            $('#auth-login-continue').click(validate);
+            $('#main-container').fadeToggle('slow', function() {
+                $('#auth-login').fadeToggle('slow');
+            });
+        }
+
+        function displayCode()
+        {
+            $.post('/display_code');
+        }
+
+        function showFileManagerScreen()
+        {
+            DS.FileManager.Init();
+        }
+
+        function validate()
+        {
+            $('#auth-message').hide();
+            var val1, val2, val3;
+            if (DS.LastLogin == "Never")
+            {
+                val1 = $('#auth-welcome-textbox-1').val();
+                val2 = $('#auth-welcome-textbox-2').val();
+                val3 = $('#auth-welcome-textbox-3').val();
+
+                if (val1 == "" || val2 == "" || val3 == "")
+                {
+                    showMessage("All fields must be filled in.");
+                    return;
+                }
+
+                if (val2 != val3)
+                {
+                    showMessage("Passwords do not match.");
+                    return;
+                }
+            }
+            else
+            {
+                val1 = $('#auth-login-textbox-1').val();
+                val2 = $('#auth-login-textbox-2').val();
+
+                if (val1 == "" || val2 == "")
+                {
+                    showMessage("All fields must be filled in.");
+                    return;
+                }
+            }
+
+            $('.auth-continue').hide();
+
+            $.ajax({
+                type: 'POST',
+                url: (DS.LastLogin == "Never") ? '/welcome' : '/login',
+                dataType: 'json',
+                data: JSON.stringify({ AuthCode: val1, Password: val2 }),
+                success: function(response) {
+                    if (response.ErrorOccurred == true) 
+                    {
+                        showMessage("An unknown error occurred.");
+                        $('.auth-continue').fadeToggle('slow');
+                        return;
+                    } 
+                    else if (response.IsValidAuthCode == false)
+                    {
+                        showMessage("DigiSafe code is incorrect.");
+                        $('.auth-continue').fadeToggle('slow');
+                        return;
+                    }
+                    else if (response.IsValidPassword == false)
+                    {
+                        showMessage("Incorrect password.");
+                        $('.auth-continue').fadeToggle('slow');
+                        return;
+                    }
+                    else if (response.IsValidPassword == true)
+                    {
+                        DS.Token = response.Token;
+                        DS.FailedLoginAttempts = response.FailedLoginAttempts;
+                        $('.auth-textbox').hide();
+                        $(DS.LastLogin == "Never" ? '#auth-welcome-form' : '#auth-login-form').fadeToggle('slow', function() {
+                            showFileManagerScreen();
+                        });
+                    }
+                }          
+            });
+        }
+
+        function showMessage(msg)
+        {
+            $('#auth-message').html(msg);
+            $('#auth-message').fadeToggle('fast'); 
+        }
+
+        function hideMessage()
+        {
+            $('#auth-message').fadeOut('fast');
+        }
+
+        return {
+            Init: init
+        };
+    }());
+
+    DS.FileManager = (function(){
+        
+        var upload;
+        var busy = false;
+
+        function init()
+        {
+            upload = new uploader(document.getElementById('file-upload'), { 
+                multiple: false,
+                autoUpload: true,
+                url: '/upload?Token=' + DS.Token,
+                onprogress: fileUploadProgress,
+                success: fileUploadSuccess,
+                error: fileUploadError
+            });
+            upload.setOpt('url', '/upload?Token=' + DS.Token);
+            $('#filemanager-actionbar-add').click(addFile);
+            $('#filemanager-actionbar-remove').click(removeFile);
+            $('#filemanager-actionbar-download').click(downloadFile);
+            $('#filemanager-control').click(clearSelection);
+            $(document.body).click(clearSelection);
+            $('#filemanager-progressbar').click(function (e) { e.stopPropagation(); });
+            $('#filemanager-container').fadeToggle('slow');
+            $('#auth-info').html("Last login: " + DS.LastLogin + '<span class="auth-info-spacer"/>' + "Failed login attempts: " + DS.FailedLoginAttempts).fadeToggle('slow'); 
+            var div = $('#filemanager-control');
+            $({alpha:0}).animate({alpha:1}, {
+                duration: 1000,
+                step: function(){
+                    div.css('border-bottom-color','rgba(0,0,255,' + this.alpha + ')');
+                }
+            });    
+            getFiles();
+        }
+
+        function runCommand(cmd, data, callback)
+        {
+            if (data)
+                data['Token'] = DS.Token;
+            else
+                data = { "Token": DS.Token };
+            data = JSON.stringify(data);
+            $.post(cmd, data, callback, 'json'); 
+        }
+
+        function getFiles()
+        {
+            runCommand('get_files', null, function (files) {
+                var html = '<table class="table">';
+                var rows = '';
+                for (var i = 0; i < files.length; i++)
+                { 
+                    var file = $('#template-row').html()
+                        .replace(/{ID}/g, i)
+                        .replace(/{FILENAME}/g, files[i].FileName)
+                        .replace(/{DATE_ADDED}/g, files[i].DateAdded)
+                        .replace(/{SIZE}/g, files[i].Size);
+                    rows += file;
+                }
+                html += rows;
+                html += '</table>';
+                $('#filemanager-control-table-body').append(html);
+                $('#filemanager-control-table-body').perfectScrollbar();
+            });
+        }
+
+        function selectFile(id)
+        {
+            DS.FileManager.SelectedFileId = id;
+            $('.row-selected').removeClass('row-selected');
+            $('#row-' + id).addClass('row-selected');
+            event.stopPropagation();
+        }
+
+        function clearSelection()
+        {
+            DS.FileManager.SelectedFileId = "";
+            $('.row-selected').removeClass('row-selected');
+        }
+
+        function isBusy()
+        {
+            if (busy == true)
+            { 
+                showError("The system is busy, please wait");
+                return true; 
+            }
+            return false;
+        }
+
+        function fileUploadProgress(e)
+        {
+            if (busy != true)
+            {
+                busy = true;
+                $('#filemanager-progressbar').fadeIn('fast');
+                $('#filemanager-progressbar').progressbar({ value: 0 });
+            }
+            var progress = (e.loaded / e.total) * 100;
+            $('#filemanager-progressbar').progressbar('value', progress);
+        }
+
+        function fileUploadSuccess()
+        {
+            busy = false;
+            $('#filemanager-progressbar').fadeOut('fast');
+            showMessage("File uploaded successfully");
+        }
+
+        function fileUploadError()
+        {
+            busy = false;
+            showError("The file failed to upload");
+        }
+
+        function addFile()
+        {
+            if (isBusy()) { return; }
+            $('#file-upload').click();
+        }
+
+        function removeFile()
+        {
+            alert("remove file: " + DS.FileManager.SelectedFileId);
+        }
+
+        function downloadFile()
+        {
+            alert("download file: " + DS.FileManager.SelectedFileId);
+        }
+
+        function showMessage(msg)
+        {
+            $('#filemanager-message').html(msg);
+            $('#filemanager-message').fadeToggle('slow').delay(2000).fadeToggle('slow'); 
+        }
+
+        function showError(msg)
+        {
+            $('#filemanager-error').html(msg);
+            $('#filemanager-error').fadeToggle('slow').delay(2000).fadeToggle('slow'); 
+        }
+
+        return {
+            Init: init,
+            SelectFile: selectFile
+        };
+    }());
+
+    $(function(){
+        DS.Auth.Init();
+    });
+    
+</script>
+
+<script id="template-row" type="text/template">
+    <tr id="row-{ID}" class="row" onclick="var event = arguments[0] || window.event; DS.FileManager.SelectFile('{ID}')">
+        <td class="column column-1">{FILENAME}</td>
+        <td class="column column-2">{DATE_ADDED}</td>
+        <td class="column column-3">{SIZE}</td>
+    </tr>
+</script>
+
+</head>
+<body>
+<div id="main-container">
+    <div id="main-container-header">
+        <img id="logo" alt="DigiSafe" src="{{imagesPath}}/logo.png" />
+    </div>
+    <div id="main-container-body">
+        <div id="auth-container">
+            <div id="auth-welcome" class="auth">
+                <img id="auth-welcome-form" class="auth-form" src="{{imagesPath}}/auth-welcome.png" />
+                <input type="text" id="auth-welcome-textbox-1" class="auth-textbox auth-welcome-textbox" maxLength="7"/>
+                <input type="password" id="auth-welcome-textbox-2" class="auth-textbox auth-welcome-textbox" maxLength="64"/>
+                <input type="password" id="auth-welcome-textbox-3" class="auth-textbox auth-welcome-textbox" maxLength="64"/>
+                <div id="auth-welcome-continue" class="auth-continue"></div>
+            </div>        
+            <div id="auth-login" class="auth">
+                <img id="auth-login-form" class="auth-form" src="{{imagesPath}}/auth-login.png" />
+                <input type="text" id="auth-login-textbox-1" class="auth-textbox auth-login-textbox" maxLength="7"/>
+                <input type="password" id="auth-login-textbox-2" class="auth-textbox auth-login-textbox" maxLength="64"/>
+                <div id="auth-login-continue" class="auth-continue"></div>
+            </div>        
+            <div id="auth-message"></div>
+        </div>
+        <div id="filemanager-container">
+            <div id ="filemanager-control">
+                <div id="filemanager-actionbar">
+                    <table id="filemanager-actionbar-table">
+                        <tr><td id="filemanager-actionbar-add" class="filemanager-actionbar-table-column">Add</td><td id="filemanager-actionbar-remove" class="filemanager-actionbar-table-column">Remove</td><td id="filemanager-actionbar-download" class="filemanager-actionbar-table-column">Download</td></tr>
+                    </table>
+                    <div id="filemanager-progressbar"></div>
+                </div>
+                <div id="filemanager-control-table">
+                    <div class="column-borders"></div>
+                    <div id="filemanager-control-table-header">
+                        <div class="column-header column-header-1">Filename</div>
+                        <div class="column-header column-header-2">Date Added</div>
+                        <div class="column-header column-header-3">Size (bytes)</div>
+                    </div>
+                    <div id="filemanager-control-table-body">
+
+                    </div>
+                </div>
+            </div>
+            <div id="filemanager-message"></div>
+            <div id="filemanager-error"></div>
+            <div id="auth-info"></div>
+        </div>
+    </div>    
+</div>
+<input id="file-upload" name="file" type="file">
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+﻿Build started 6/2/2015 1:00:58 AM.
+     1>Project "C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\StegaCrypt\StegaCrypt.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\StegaCrypt\..\libtommath-0.42.0" /I"C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\StegaCrypt\..\libtomcrypt-develop\src\headers" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\StegaCrypt.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+     1>C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\libtomcrypt-develop\src\headers\tomcrypt_cfg.h(26): warning C4273: 'malloc' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(642) : see previous definition of 'malloc'
+     1>C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\libtomcrypt-develop\src\headers\tomcrypt_cfg.h(27): warning C4273: 'realloc' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(644) : see previous definition of 'realloc'
+     1>C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\libtomcrypt-develop\src\headers\tomcrypt_cfg.h(28): warning C4273: 'calloc' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(640) : see previous definition of 'calloc'
+     1>C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\libtomcrypt-develop\src\headers\tomcrypt_cfg.h(29): warning C4273: 'free' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(641) : see previous definition of 'free'
+     1>C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\libtomcrypt-develop\src\headers\tomcrypt_cfg.h(31): warning C4273: 'qsort' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(452) : see previous definition of 'qsort'
+     1>C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\libtomcrypt-develop\src\headers\tomcrypt_cfg.h(35): warning C4273: 'clock' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.h(184) : see previous definition of 'clock'
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\StegaCrypt\..\libtommath-0.42.0" /I"C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\StegaCrypt\..\libtomcrypt-develop\src\headers" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\StegaCrypt.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt StegaCrypt.cpp
+         StegaCrypt.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\Release\StegaCrypt.exe" /INCREMENTAL:NO /NOLOGO tommath.lib tomcrypt.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\Release\StegaCrypt.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\Release\StegaCrypt.lib" /MACHINE:X86 /SAFESEH Release\stdafx.obj
+         Release\StegaCrypt.obj
+     1>tomcrypt.lib(aes.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+         Finished generating code
+         StegaCrypt.vcxproj -> C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\Release\StegaCrypt.exe
+     1>Done Building Project "C:\Users\Robert\documents\visual studio 2013\Projects\StegaCrypt\StegaCrypt\StegaCrypt.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.58

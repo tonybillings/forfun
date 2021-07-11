@@ -1,0 +1,1 @@
+adb.exe shell run-as com.XPBonesDataImport "/system/bin/chmod a+x /data/data/com.XPBonesDataImport"

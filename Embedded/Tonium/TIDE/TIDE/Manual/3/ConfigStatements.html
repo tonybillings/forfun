@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>xT50 :: Config Statements</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">xT50 :: Config Statements</span>
+
+        <div id="content-container">
+            <span>
+                Config statements are used to set configuration parameters, which are described and listed <b><a href="../2/ConfigurableDesign.html">here</a></b>.  
+                These statements begin and end with an opening and closing square bracket, respectively.  They follow typical assignment-style syntax, with the config parameter
+                on the left of an assignment operator and its assigned value on right of the operator, as illustrated below:
+            </span>
+            <br />
+            <br />
+            <div class="code">
+                [CLOCK = 120] <br />
+                [P31 = INPUT_PULLDOWN, 248] <br />
+                [P32 = OUTPUT, 249]
+            </div>
+            <br />
+            <span>
+                Note that no aspect of a config statement is case-sensitive and the spaces are optional:
+            </span>
+            <br />
+            <br />
+            <div class="code">
+                [clock=120] <br />
+                [p31=input,248] <br />
+            </div>
+            <br />
+        </div>
+    </div>
+</body>
+</html>

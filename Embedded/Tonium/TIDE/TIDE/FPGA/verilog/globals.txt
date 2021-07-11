@@ -1,0 +1,62 @@
+`ifndef _globals_
+`define _globals_
+
+`define HIGH 1'b1
+`define LOW 1'b0
+
+`define NOP		8'd0
+`define IN		8'd1
+`define INC		8'd2
+`define OUT		8'd3
+`define OUTC	8'd4
+`define SET		8'd5
+`define SETC	8'd6
+`define EQ		8'd7
+`define EQC		8'd8
+`define NEQ		8'd9
+`define NEQC	8'd10
+`define LT		8'd11
+`define LTC		8'd12
+`define LTEQ	8'd13
+`define LTEQC	8'd14
+`define GT		8'd15
+`define GTC		8'd16
+`define GTEQ	8'd17
+`define GTEQC	8'd18
+`define ADD		8'd19
+`define ADDC	8'd20
+`define SUB		8'd21
+`define SUBC	8'd22
+`define MUL		8'd23
+`define MULC	8'd24
+`define SHL		8'd25
+`define SHLC	8'd26
+`define SHR		8'd27
+`define SHRC	8'd28
+`define LAND	8'd29
+`define LANDC	8'd30
+`define AND		8'd31
+`define ANDC	8'd32
+`define NAND	8'd33
+`define NANDC	8'd34
+`define LOR		8'd35
+`define LORC	8'd36
+`define OR		8'd37
+`define ORC		8'd38
+`define NOR		8'd39
+`define NORC	8'd40
+`define XOR		8'd41
+`define XORC	8'd42
+`define XNOR	8'd43
+`define XNORC	8'd44
+`define INV		8'd45
+`define BEQ		8'd46
+`define BEQC	8'd47
+`define BNEQ	8'd48
+`define BNEQC	8'd49
+`define DLYUS	8'd50
+`define DLYMS	8'd51
+`define SDLY	8'd52
+`define SDLYC	8'd53
+
+`endif

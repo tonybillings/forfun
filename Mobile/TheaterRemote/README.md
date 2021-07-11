@@ -1,0 +1,1 @@
+This Android app controls the IR transmitter mentioned in the Embedded projects folder.  The transmitter is used to send IR signals to my theater while the Android app acts as the remote, sending commands to the IR transmitter over wifi.  

@@ -1,0 +1,59 @@
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\FourierTransform.exe.config
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.Properties.Resources.resources
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.csproj.GenerateResource.Cache
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\FourierTransform.exe
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\FourierTransform.pdb
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.exe
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.pdb
+c:\users\robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.Main.resources
+C:\Users\Robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.WaveControl.resources
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\bin\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\bin\Debug\FourierTransform.exe.config
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\bin\Debug\FourierTransform.exe
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\bin\Debug\FourierTransform.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.csprojResolveAssemblyReference.cache
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.Main.resources
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.Properties.Resources.resources
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.WaveControl.resources
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.csproj.GenerateResource.Cache
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.exe
+C:\Users\robert.billings\Documents\Visual Studio 2012\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.pdb
+C:\Users\Robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.dll
+C:\Users\Robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.IO.dll
+C:\Users\Robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.pdb
+C:\Users\Robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.xml
+C:\Users\Robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.IO.pdb
+C:\Users\Robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.IO.xml
+C:\Users\Robert\documents\visual studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.csprojResolveAssemblyReference.cache
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\bin\Debug\FourierTransform.exe.config
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\obj\Debug\FourierTransform.exe
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\obj\Debug\FourierTransform.pdb
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\bin\Debug\FourierTransform.exe
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\bin\Debug\FourierTransform.pdb
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.dll
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.IO.dll
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.pdb
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.xml
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.IO.pdb
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.IO.xml
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\obj\Debug\FourierTransform.Main.resources
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\obj\Debug\FourierTransform.Properties.Resources.resources
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\obj\Debug\FourierTransform.WaveControl.resources
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\obj\Debug\FourierTransform.csproj.GenerateResource.Cache
+C:\Users\robert.billings\Desktop\FourierTransform\FourierTransform\obj\Debug\FourierTransform.csprojResolveAssemblyReference.cache
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\FourierTransform.exe.config
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.exe
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\FourierTransform.exe
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\FourierTransform.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.dll
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.IO.dll
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.xml
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.IO.pdb
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\bin\Debug\MathNet.Numerics.IO.xml
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.csprojResolveAssemblyReference.cache
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.Main.resources
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.Properties.Resources.resources
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.WaveControl.resources
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\FourierTransform\FourierTransform\obj\Debug\FourierTransform.csproj.GenerateResource.Cache

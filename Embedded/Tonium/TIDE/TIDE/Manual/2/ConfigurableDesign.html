@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Configurable Design</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+        table
+        {
+            border-collapse: collapse;
+            table-layout: fixed; 
+            width: 1px; 
+            text-align: left;
+        }
+
+        tr, td
+        {
+            height: 25px;
+            overflow: hidden;
+            border-bottom: 1px solid gray;
+        }
+
+        th
+        {
+             border-bottom: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">Configurable Design</span>
+
+        <div id="content-container">
+            <span>
+                Certain aspects of the design that gets synthesized on the FPGA chip can be configured using xT50 and Tranquil code.
+                The two languages use different syntax for changing the configuration, so see their respective documentation for more details.
+            </span>
+            <br />
+            <br />
+            <span>
+                The following table lists the configurable parameters of the design.  Note that the parameters and their possible values are not case-sensitive.
+            </span>
+            <br />
+            <br />
+            <table>
+                <thead>
+                    <tr>
+                        <th width="100px">Parameter</th>
+                        <th width="325px">Values</th>
+                        <th width="400px">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>CLOCK</td><td>10, 25, 50, 100, 125</td><td>System clock speed in megahertz.  Any design not using custom Verilog code is guaranteed to be free of timing errors using these speeds.</td></tr>
+                    <tr><td>P*</td><td>(input|input_pullup|<br />input_pulldown|output), **</td><td>IO pin configuration.  IO pins connected to the FPGA chip can be configured for input or output mode.  When the pin will be receiving input, the internal circuitry can be configured in pull-down or pull-up mode in order to simplify the external circuitry. <br /><br />* The pin number as determined by the manufacturer.<br /><br />** The memory-mapped IO address as determined by the designer. </td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Program ROM</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">Program ROM</span>
+
+        <div id="content-container">
+            <span>
+                A set of instructions contained within the same scope will be
+                compiled into a Verilog ROM module before being synthesized on
+                the FPGA chip.  This manual sometimes refers to such a set of
+                instructions as a program ROM (or program) since it contains the
+                logic that constitutes a software application or program.
+            </span>
+            <br />
+            <br />
+            <span>
+                Like any ROM module, a program ROM has an input bus for the data address
+                and an output bus for the data at the selected address.  In the case of
+                a program ROM, the "data" is an instruction that can be executed by a
+                Tonium processor core.
+            </span>
+            <br />
+            <br />
+            <span>
+                A processor core utilizes an instruction pointer to maintain its current
+                position in the program ROM.  On each clock cycle, it increments the
+                pointer so as to execute the next instruction in the program.
+                However, most programs will manipulate the instruction pointer (via a specific
+                kind of instruction) in order to implement various forms of flow control
+                logic such as loops and functions.  If a core reaches the end of a program's
+                instruction list, it will simply loop back to the beginning and execute the
+                program again.  Of course, it is possible to prevent this behavior by
+                manipulating the instruction pointer.
+            </span>
+        </div>
+    </div>
+</body>
+</html>

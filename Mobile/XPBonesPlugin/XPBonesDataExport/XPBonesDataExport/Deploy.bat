@@ -1,0 +1,2 @@
+DEL "X:\Games\X-Plane 11\Resources\plugins\XPBonesDataExport.xpl"
+COPY "C:\Users\Tony\Documents\Visual Studio 2017\Projects\XPBonesPlugin\XPBonesDataExport\x64\Release\XPBonesDataExport.dll" "X:\Games\X-Plane 11\Resources\plugins\XPBonesDataExport.xpl"

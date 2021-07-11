@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinDirStatVR.CSharp.Plugins", "WinDirStatVR.CSharp.Plugins.csproj", "{6D463DB8-CDC3-9F3F-5B10-8078FC68C943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinDirStatVR.CSharp", "WinDirStatVR.CSharp.csproj", "{1B8E1AA6-B687-92E7-200F-47262484B063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinDirStatVR.CSharp.Editor", "WinDirStatVR.CSharp.Editor.csproj", "{96104005-9391-6B08-47B3-59145B7322D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D463DB8-CDC3-9F3F-5B10-8078FC68C943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D463DB8-CDC3-9F3F-5B10-8078FC68C943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D463DB8-CDC3-9F3F-5B10-8078FC68C943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D463DB8-CDC3-9F3F-5B10-8078FC68C943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8E1AA6-B687-92E7-200F-47262484B063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8E1AA6-B687-92E7-200F-47262484B063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8E1AA6-B687-92E7-200F-47262484B063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8E1AA6-B687-92E7-200F-47262484B063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96104005-9391-6B08-47B3-59145B7322D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96104005-9391-6B08-47B3-59145B7322D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96104005-9391-6B08-47B3-59145B7322D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96104005-9391-6B08-47B3-59145B7322D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

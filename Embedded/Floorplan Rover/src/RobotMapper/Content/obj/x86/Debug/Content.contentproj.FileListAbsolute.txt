@@ -1,0 +1,5 @@
+C:\Users\Robert\documents\visual studio 2013\Projects\FourierTransform\Content\obj\x86\Debug\Content.contentprojResolveAssemblyReference.cache
+C:\Users\robert.billings\Desktop\FourierTransform\Content\obj\x86\Debug\Content.contentprojResolveAssemblyReference.cache
+C:\Users\robert.billings\Documents\Visual Studio 2013\Projects\SignalAnalyzer\Content\obj\x86\Debug\Content.contentprojResolveAssemblyReference.cache
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\Content\obj\x86\Debug\Content.contentprojResolveAssemblyReference.cache
+C:\Users\Robert\Documents\Visual Studio 2013\Projects\RobotMapper\RobotMapper\Content\obj\x86\Debug\Content.contentprojResolveAssemblyReference.cache

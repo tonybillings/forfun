@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Bones">
+      <UniqueIdentifier>{b13cd50d-a811-40f3-9496-0723b3244180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bones\NumPad">
+      <UniqueIdentifier>{7f453611-c38d-46ec-91bb-6ebb6b6d8aec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bones\Screen">
+      <UniqueIdentifier>{59455624-cd30-4251-991b-ba24f6f41845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bones\Serial">
+      <UniqueIdentifier>{dcf4a692-5dc7-4d75-b9b6-9b510ff3b7d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bones\Misc">
+      <UniqueIdentifier>{3c137945-6c9c-41c6-bb45-e3761ae836cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens">
+      <UniqueIdentifier>{5ee49826-c21b-4a0a-8fcd-529ca9b2724e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{e6d7745b-f6a6-42e2-9cbf-bf947ce73e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Visual Micro">
+      <UniqueIdentifier>{39246b32-bd4a-40d8-be3f-96500ec3326d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DigiSafe.ino" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libraries\Bones\bones.h">
+      <Filter>Bones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\numpadbutton.h">
+      <Filter>Bones\NumPad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\numpadcontroller.h">
+      <Filter>Bones\NumPad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\screen.h">
+      <Filter>Bones\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\screenbutton.h">
+      <Filter>Bones\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\screencontroller.h">
+      <Filter>Bones\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\serialcontroller.h">
+      <Filter>Bones\Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\event.h">
+      <Filter>Bones\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\position.h">
+      <Filter>Bones\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\size.h">
+      <Filter>Bones\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\util.h">
+      <Filter>Bones\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\list.h">
+      <Filter>Bones\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bones\dictionary.h">
+      <Filter>Bones\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScreen.h">
+      <Filter>Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeScreen.h">
+      <Filter>Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="NumPadScreen.h">
+      <Filter>Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialCommands.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenRouter.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Visual Micro\.DigiSafe.vsarduino.h">
+      <Filter>Visual Micro</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens.h">
+      <Filter>Screens</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libraries\Bones\numpadbutton.cpp">
+      <Filter>Bones\NumPad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraries\Bones\numpadcontroller.cpp">
+      <Filter>Bones\NumPad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraries\Bones\screenbutton.cpp">
+      <Filter>Bones\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraries\Bones\screencontroller.cpp">
+      <Filter>Bones\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraries\Bones\serialcontroller.cpp">
+      <Filter>Bones\Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScreen.cpp">
+      <Filter>Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeScreen.cpp">
+      <Filter>Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="NumPadScreen.cpp">
+      <Filter>Screens</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

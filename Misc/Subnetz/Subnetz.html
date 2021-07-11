@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Subnetz</title>
+
+<script src="Scripts\JQuery.js"></script>
+<script src="Scripts\Chart.js"></script>
+<script src="Scripts\ChartConfig.js"></script>
+
+<script>
+
+$(document).ready(function() {
+	init();
+});
+
+var options = {
+	//Boolean - Whether we should show a stroke on each segment
+	segmentShowStroke : true,
+
+	//String - The colour of each segment stroke
+	segmentStrokeColor : "#fff",
+
+	//Number - The width of each segment stroke
+	segmentStrokeWidth : 1,
+
+	//Number - The percentage of the chart that we cut out of the middle
+	percentageInnerCutout : 0, // This is 0 for Pie charts
+
+	//Number - Amount of animation steps
+	animationSteps : 100,
+
+	//String - Animation easing effect
+	animationEasing : "easeOutBounce",
+
+	//Boolean - Whether we animate the rotation of the Doughnut
+	animateRotate : true,
+
+	//Boolean - Whether we animate scaling the Doughnut from the centre
+	animateScale : false,
+
+	//String - A legend template
+	legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+};
+
+var chartA;
+var chartB;
+
+var subnets = ["0", "128", "192", "224", "240", "248", "252"];
+var slices = [1, 2, 4, 8, 16, 32, 64];
+
+var ipA = 100;
+var ipB = 101;
+var minRangeA = 0;
+var minRangeB = 0;
+var maxRangeA = 255;
+var maxRangeB = 255;
+
+var isValidA = true;
+var isValidB = true;
+
+function dec2bin(dec)
+{
+    return pad((dec >>> 0).toString(2));
+}
+
+function pad(str) 
+{
+	return ("00000000" + str).slice(-8);
+}
+
+function update_chart(name, sm, ip)
+{
+	var sliceCount = slices[subnets.indexOf(sm)];
+	var sliceSize = 256 / sliceCount;
+	
+	var data = [];
+	
+	for (var i = 0; i < sliceCount; i++)
+	{
+		var subnetId = i * sliceSize;
+		var broadcast = subnetId + sliceSize - 1;
+		var color = "#FF0000";
+		
+		if (ip == subnetId || ip == broadcast)
+		{
+			show_invalid_msg(name);
+		}
+		else if (ip > subnetId && ip < broadcast)
+		{
+			color = "#0000FF";
+			
+			if (name == "A")
+			{
+				ipA = ip;
+				minRangeA = subnetId;
+				maxRangeA = broadcast;
+			}
+			else if (name == "B")
+			{
+				ipB = ip;
+				minRangeB = subnetId;
+				maxRangeB = broadcast;
+			}
+		}
+		
+		var slice = { 
+			value: sliceSize,
+			color: color,
+			highlight: "#B99ACC",
+			label: subnetId.toString() + "-" + broadcast.toString()
+		};
+		
+		data.push(slice);
+	}
+	
+	var ctx = $("#NetworkChart" + name).get(0).getContext("2d");
+	
+	if (name == "A")
+	{
+		chartA.destroy();
+		chartA = new Chart(ctx).Pie(data,options);
+	}
+	else if (name == "B")
+	{
+		chartB.destroy();
+		chartB = new Chart(ctx).Pie(data,options);
+	}
+}
+
+function update_status_image()
+{
+	if (isValidA == false || isValidB == false)
+	{
+		$("#StatusImage").attr("src", "Images/invalid.jpg");
+	}
+	else
+	{
+		if (ipA == ipB)
+			$("#StatusImage").attr("src", "Images/nocomm.jpg");
+		else if (ipA > minRangeB && ipA < maxRangeB && ipB > minRangeA && ipB < maxRangeA)
+			$("#StatusImage").attr("src", "Images/bidirectional.jpg");
+		else if (ipA > minRangeB && ipA < maxRangeB)
+			$("#StatusImage").attr("src", "Images/btoa.jpg");
+		else if (ipB > minRangeA && ipB < maxRangeA)
+			$("#StatusImage").attr("src", "Images/atob.jpg");
+		else
+			$("#StatusImage").attr("src", "Images/nocomm.jpg");
+	}
+}
+
+function update_binary(name)
+{
+	var ip = parseInt($("#IPAddress" + name).val());
+	var sm = parseInt($("#SubnetMask" + name).val());
+	
+	var ipBin = dec2bin(192) + "." + dec2bin(168) + "." + dec2bin(1) + "." + dec2bin(ip);
+	var smBin = dec2bin(255) + "." + dec2bin(255) + "." + dec2bin(255) + "." + dec2bin(sm);
+	
+	$("#BinaryIPAddress" + name).html(ipBin);
+	$("#BinarySubnetMask" + name).html(smBin);
+}
+
+function update_btn_click(name)
+{
+	hide_invalid_msg(name);
+	var ip = $("#IPAddress" + name).val();
+	
+	if (isNaN(ip) || ip < 0 || ip > 255)
+	{
+		show_invalid_msg(name);
+		update_status_image();
+		return;
+	}
+
+	var sm = $("#SubnetMask" + name).val();
+	
+	if (subnets.indexOf(sm) == -1)
+	{
+		show_invalid_msg(name);
+		update_status_image();
+		return;
+	}
+	
+	update_binary(name);
+	update_chart(name, sm, ip);
+	update_status_image();
+}
+
+function show_invalid_msg(name)
+{
+	$("#InvalidMessage" + name).show();
+	
+	if (name == "A")
+		isValidA = false;
+	else if (name == "B")
+		isValidB = false;
+}
+
+function hide_invalid_msg(name)
+{
+	$("#InvalidMessage" + name).hide();
+	
+	if (name == "A")
+		isValidA = true;
+	else if (name == "B")
+		isValidB = true;
+}
+
+function init_chart(name)
+{
+	var ctx = $("#NetworkChart" + name).get(0).getContext("2d");
+	
+	var data = [
+    {
+        value: 100,
+        color:"#0000FF",
+        highlight: "#B99ACC",
+        label: "0-255"
+    }];
+	
+	if (name == "A")
+		chartA = new Chart(ctx).Pie(data,options);
+	else if (name == "B")
+		chartB = new Chart(ctx).Pie(data,options);
+}
+
+function init_sm_tb(name)
+{
+	$("#SubnetMask" + name).val(0);
+}
+
+function init_ip_tbs()
+{
+	$("#IPAddressA").val(ipA);
+	$("#IPAddressB").val(ipB);
+	update_binary("A");
+	update_binary("B");
+}
+
+function init_btns()
+{
+	$(".update_btn").hover(function () {
+		$(this).animate({
+			"opacity": 0.5
+		}, 175);
+	}, function () {
+		$(this).stop().animate({
+			"opacity": 1
+		}, 175);
+	});
+}
+
+function init_eh()
+{
+	$("#IPAddressA").bind("keypress", function (event){
+		if (event.keyCode === 13){
+			$("#UpdateButtonA").trigger("click");
+		}
+	});
+	
+	$("#IPAddressB").bind("keypress", function (event){
+		if (event.keyCode === 13){
+			$("#UpdateButtonB").trigger("click");
+		}
+	});
+	
+	$("#SubnetMaskA").bind("keypress", function (event){
+		if (event.keyCode === 13){
+			$("#UpdateButtonA").trigger("click");
+		}
+	});
+	
+	$("#SubnetMaskB").bind("keypress", function (event){
+		if (event.keyCode === 13){
+			$("#UpdateButtonB").trigger("click");
+		}
+	});
+}
+
+function init()
+{
+	init_chart("A");
+	init_sm_tb("A");
+	init_chart("B");
+	init_sm_tb("B");
+	init_ip_tbs();
+	init_btns();
+	init_eh();
+}
+
+</script>
+
+<style>
+
+button:focus {outline:0;}
+
+body{
+	font-family: Arial;
+    background-color: #B7B7B7;
+}
+
+button{
+	width: 75px;
+}
+
+#main_container{
+	background-color: white;
+	margin: 30px auto 0 auto;
+	border: 2px solid blue;
+	width: 600px;
+    height: 540px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.chart_container{
+	text-align: center;
+	width: 250px;
+	float: left;
+}
+
+.ip_tb{
+	width: 40px;
+    font-size: 18px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.sm_tb{
+	width: 40px;
+    font-size: 18px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.tb_label{
+	font-size: 18px;
+}
+
+.update_btn{
+	margin-top: 8px;
+	color: white;
+	background-color: blue;
+	border: 1px solid blue;
+	height: 23px;
+}
+
+.update_btn:hover{
+	cursor: pointer;
+}
+
+.bin_label{
+	font-size: 11px;
+	font-family: Consolas;
+}
+
+.invalid_cfg{
+	color: red;
+	display: none;
+	line-height: 28px;
+	font-weight: bold;
+}
+
+</style>
+
+</head>
+<body>
+	<div id="main_container">
+		<img id="StatusImage" src="Images\bidirectional.jpg"></img>
+		<br/>
+		<div class="chart_container">
+			<canvas id="NetworkChartA" width="200" height="200"></canvas>
+			<br/>
+			<span class="tb_label">IP: 192.168.1.</span><input class="ip_tb" type="text" id="IPAddressA" />
+			<br/>
+			<span class="tb_label">SM: 255.255.255.</span><input class="sm_tb" type="text" id="SubnetMaskA" />
+			<br/>
+			<span class="bin_label" id="BinaryIPAddressA"></span>
+			<br/>
+			<span class="bin_label" id="BinarySubnetMaskA"></span>
+			<br/>
+			<button id="UpdateButtonA" class="update_btn" onclick="update_btn_click('A');">UPDATE</button>
+			<br/>
+			<span id="InvalidMessageA" class="invalid_cfg">Invalid configuration</span>
+		</div>
+		<div class="chart_container" style="margin-left: 100px">
+			<canvas id="NetworkChartB" width="200" height="200"></canvas>
+			<br/>
+			<span class="tb_label">IP: 192.168.1.</span><input class="ip_tb" type="text" id="IPAddressB" />
+			<br/>
+			<span class="tb_label">SM: 255.255.255.</span><input class="sm_tb" type="text" id="SubnetMaskB" />
+			<br/>
+			<span class="bin_label" id="BinaryIPAddressB"></span>
+			<br/>
+			<span class="bin_label" id="BinarySubnetMaskB"></span>
+			<br/>
+			<button id="UpdateButtonB" class="update_btn" onclick="update_btn_click('B');">UPDATE</button>
+			<br/>
+			<span id="InvalidMessageB" class="invalid_cfg">Invalid configuration</span>
+		</div>
+	</div>
+</body>
+</html>

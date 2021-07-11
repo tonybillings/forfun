@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>xT50 :: Scope Statements</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Common.css" />
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main-container">
+        <span id="toc"><a href="../Index.html">&lt; Table of Contents</a></span>
+        <br />
+        <br />
+        <div id="separator"></div>
+        <br />
+        <br />
+        <span id="title">xT50 :: Scope Statements</span>
+
+        <div id="content-container">
+            <span>
+                Scopes are used to implement a <b><a href="../2/MultiCoreArchitecture.html">multi-core design</a></b> (or what could also be thought of as a multi-threaded application).
+                A "root core" is a core not belonging to a group, whereas a core belonging to a group is intuitively called a "group core."
+                Cores in the same group share a single L2 cache, which is the primary reason for defining group cores.  Put another way,
+                multiple application threads can share data between them if the executing cores are in the same group.
+            </span>
+            <br />
+            <br />
+            <span>
+                There are three scope types: root, group, and core.  There is only one root scope and it cannot be declared explicitly.
+                All statements not defined in a group or core scope will, by default, be implicitly defined in the root scope.
+            </span>
+            <br />
+            <br />
+            <img src="../Images/Scopes.png" />
+            <br />
+            <br />
+            <span>
+                A scope statement signifies the beginning of a group or core scope.  The statements that follow a scope statement are considered
+                to be part of the scope that was last defined.  The only exception to this rule would be a subsequent scope statement, which
+                in itself is not part of any scope.
+            </span>
+            <br />
+            <br />
+            <span>
+                A scope statement consists of the scope name followed by the scope operator, with no spaces in between.  The scope name format is different
+                for root cores and group cores.  For a root core, the scope name is simply the name given to a core.  For a group core, the scope name
+                contains the group name and the core name, joined together with a period.  The scope name may contain letters, numbers and underscores,
+                in any combination. Scope names are case-sensitive.
+            </span>
+            <br />
+            <br />
+            <span>
+                The following example illustrates two root cores, one defined implicitly (by default) and the other explicitly, and two group cores
+                belonging to the same group:
+            </span>
+            <br />
+            <br />
+            <div class="code">
+                SET R1 1 <br />
+                <br />
+                Core0:: <br />
+                <div class="code indented-code">
+                    SET R1 2
+                </div>
+                <br />
+                Group0.Core0:: <br />
+                <div class="code indented-code">
+                    SET R1 3 <br />
+                    OUT R1 128
+                </div>
+                <br />
+                Group0.Core1:: <br />
+                <div class="code indented-code">
+                    SET R1 4 <br />
+                    NOP <br />
+                    IN R2 128
+                </div>
+            </div>
+            <br />
+            <span>
+                In the example above, a total of four program ROM's, and subsequently four cores, will be created.  Each of the four cores has its
+                own L1 cache, therefore the values 1, 2, 3, and 4 will be stored in the respective registers of the four cores.  However, the two
+                group cores share a common L2 cache and in this example Core0 writes the value 3 to memory address 128, which is then read by Core1
+                and stored in its R2 register.  Note that the NOP (no operation) instruction is needed in this case to ensure the data has been
+                written to memory first as the cores are executing these instructions in parallel.
+            </span>
+            <br />
+            <br />
+            <span>
+                It is possible to declare a group scope for the purpose of defining a named constant that will be applicable to all cores within
+                a group.  To do this, an asterisk (wild card) is used in place of a core name. An example of this is as follows:
+            </span>
+            <br />
+            <br />
+            <div class="code">
+                Group0.*:: <br />
+                <div class="code indented-code">
+                    const GROUP_CONST = 123
+                </div>
+                <br />
+                Group0.Core0:: <br />
+                <div class="code indented-code">
+                    SET R1 GROUP_CONST
+                </div>
+                <br />
+                Group0.Core1:: <br />
+                <div class="code indented-code">
+                    SET R1 GROUP_CONST
+                </div>
+            </div>
+            <br />
+            <span>Note that only const statements may be used at group scope.</span>
+            <br />
+            <br />
+        </div>
+    </div>
+</body>
+</html>

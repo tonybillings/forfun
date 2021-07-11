@@ -1,0 +1,1 @@
+This utility app can be used to convert a bitmap (\*.bmp) image to efficient/lightweight C++ code meant to run on Arduino or similar boards, which is then used to draw the image on an attached LCD screen.  This was created out of necessity as it's easy to run out of storage/memory on embedded systems.  

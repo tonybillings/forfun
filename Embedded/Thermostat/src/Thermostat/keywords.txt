@@ -1,0 +1,49 @@
+
+#######################################
+# Syntax Coloring Map for Thermostat
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DEBUG	KEYWORD1
+OperationMode	KEYWORD1
+FanMode	KEYWORD1
+HeatingState	KEYWORD1
+Bitmap	KEYWORD1
+Button	KEYWORD1
+Event	KEYWORD1
+HeatButton	KEYWORD1
+CoolButton	KEYWORD1
+TempUpButton	KEYWORD1
+FanButton	KEYWORD1
+TempDownButton	KEYWORD1
+StaticFunction	KEYWORD1
+EventHandler	KEYWORD1
+SwipeButton	KEYWORD1
+LockScreenButton	KEYWORD1
+Leaf	KEYWORD1
+ModeText	KEYWORD1
+ACText	KEYWORD1
+HeatText	KEYWORD1
+FanText	KEYWORD1
+AutoText	KEYWORD1
+OnText	KEYWORD1
+NumberZero	KEYWORD1
+NumberOne	KEYWORD1
+NumberTwo	KEYWORD1
+NumberThree	KEYWORD1
+NumberFour	KEYWORD1
+NumberFive	KEYWORD1
+NumberSix	KEYWORD1
+NumberSeven	KEYWORD1
+NumberEight	KEYWORD1
+NumberNine	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+PRINT	KEYWORD2
+PRINTLN	KEYWORD2
