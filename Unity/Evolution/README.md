@@ -6,4 +6,6 @@ The arms act as weapons, immediately killing any other life form they come in co
 
 What naturual selection teaches us is that over time traits that are more favorable for survival tend to be passed on to subsequent generations, just by virtue of being able to reproduce more if given more time for that to happen.  In this simulation, having longer arms means living longer, thereby giving these horny quads more time to self-love and reproduce.  Indeed, size does matter here. 
 
-So as the simulation progresses, what is observed is that the average arm size of all life forms is significantly longer than when the simulation started.  Additionally, while long, one-armed life forms ruled in the beginning, over more time eventually long, four-armed life forms ended up taking over the universe...and they never even knew that they were living in a simulation, powered by a game engine named Unity.  Even simulated life is not without a sense of irony.    
+So as the simulation progresses, what is observed is that the average arm size of all life forms is significantly longer than when the simulation started.  Additionally, while long, one-armed life forms ruled in the beginning, over more time eventually long, four-armed life forms ended up taking over the universe...and they never even knew that they were living in a simulation, powered by a game engine named Unity.  Even simulated life is not without a sense of irony.  
+
+![](img/evolution.png) 
