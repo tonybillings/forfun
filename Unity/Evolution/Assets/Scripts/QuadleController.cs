@@ -7,7 +7,9 @@ public class QuadleController : MonoBehaviour
     public float MultiplyFrequency;
     public float MutateFrequency;
     public float GrowthFrequency;
-    
+    public float TimeToLive;
+    public float KillRewardTimeToLiveSeconds;
+
     public GameObject ArmTop;
     public GameObject ArmRight;
     public GameObject ArmBottom;
@@ -41,6 +43,12 @@ public class QuadleController : MonoBehaviour
             Mutate();
 
         SetArms();
+
+        float armTop = _dna.ArmTop * 0.1f;
+        float armRight = _dna.ArmRight * 0.1f;
+        float armBottom = _dna.ArmBottom * 0.1f;
+        float armLeft = _dna.ArmLeft * 0.1f;
+        GetComponent<SpriteRenderer>().color = new Color(1 - (armTop * armRight), .01f, 1 - (armBottom * armLeft));
     }
 
     private void Mutate()
@@ -81,6 +89,9 @@ public class QuadleController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (Time.time - _startTime > TimeToLive)
+            _isDying = true;
+
         if (_isDying)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, 0.1f);
@@ -123,7 +134,10 @@ public class QuadleController : MonoBehaviour
         if (otherQuadle._dna != _dna)
         {
             if (Time.time - otherQuadle._startTime > 2 && Time.time - _startTime > 2)
+            {
                 _isDying = true;
+                otherQuadle._startTime += KillRewardTimeToLiveSeconds;
+            }
         }
     }
 

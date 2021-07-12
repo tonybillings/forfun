@@ -18,6 +18,35 @@ public struct QuadleDna
     public static bool operator ==(QuadleDna a, QuadleDna b)
     {
         return (a.ArmTop == b.ArmTop && a.ArmRight == b.ArmRight && a.ArmBottom == b.ArmBottom && a.ArmLeft == b.ArmLeft);
+
+        int threshold = 2;
+
+        if (a.ArmTop == b.ArmTop)
+        {
+            return a.ArmRight > b.ArmRight - threshold && a.ArmRight < b.ArmRight + threshold &&
+                a.ArmBottom > b.ArmBottom - threshold && a.ArmBottom < b.ArmBottom + threshold &&
+                a.ArmLeft > b.ArmLeft - threshold && a.ArmLeft < b.ArmLeft + threshold;
+        }
+        else if (a.ArmRight == b.ArmRight)
+        {
+            return a.ArmTop > b.ArmTop - threshold && a.ArmTop < b.ArmTop + threshold &&
+                a.ArmBottom > b.ArmBottom - threshold && a.ArmBottom < b.ArmBottom + threshold &&
+                a.ArmLeft > b.ArmLeft - threshold && a.ArmLeft < b.ArmLeft + threshold;
+        }
+        else if (a.ArmBottom == b.ArmBottom)
+        {
+            return a.ArmTop > b.ArmTop - threshold && a.ArmTop < b.ArmTop + threshold &&
+                a.ArmRight > b.ArmRight - threshold && a.ArmRight < b.ArmRight + threshold &&
+                a.ArmLeft > b.ArmLeft - threshold && a.ArmLeft < b.ArmLeft + threshold;
+        }
+        else if (a.ArmLeft == b.ArmLeft)
+        {
+            return a.ArmTop > b.ArmTop - threshold && a.ArmTop < b.ArmTop + threshold &&
+                a.ArmRight > b.ArmRight - threshold && a.ArmRight < b.ArmRight + threshold &&
+                a.ArmBottom > b.ArmBottom - threshold && a.ArmBottom < b.ArmBottom + threshold;
+        }
+
+        return false;
     }
 
     public static bool operator !=(QuadleDna a, QuadleDna b)
