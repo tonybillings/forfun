@@ -23,3 +23,11 @@ Update: the various species of Quadles are now differentiated by color!  In orde
 Rise of the apex predator!  This is after the simulation has been running for about 20 minutes at max speed.  
 
 ![](img/5.png)  
+
+If you're patient enough, you will eventually see the apex Quadle become the dominant species...  
+
+![](img/6.png)  
+
+![](img/7.png)  
+
+
